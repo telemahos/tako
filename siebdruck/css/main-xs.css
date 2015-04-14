@@ -1,0 +1,254 @@
+@media(max-width:767px){
+/* ==========================================================================
+   GENERAL XS
+   ========================================================================== */
+
+html{
+  height: 100%;
+}
+body {
+	font-family: Arial, sans-serif;
+	background: blue;
+}
+.container {
+	/*background: #ededed;*/
+	/*width: 1220px;*/
+}
+/*.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 20px;
+    padding-left: 20px;
+}*/
+.btn-default {
+    color: rgba(0,0,0, 0.64);
+    background-color: #FFF;
+    border-color: #d8dbe2;
+    border-radius: 0;
+}
+.left-col {
+	margin-left: 140px;
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header {
+	margin-top: 37px;
+	/*background: red;*/
+}
+.header-logo {
+	/*margin-right: 123px;*/
+}
+header .btn {
+	margin-top: 51px;
+}
+.first-btn {
+	margin-left: 140px;
+}
+/* ==========================================================================
+   MAIN SECTION
+   ========================================================================== */
+.main {
+	margin-top: 32px;
+}
+.main .container {
+	max-height: 252px;
+	border-top: 5px solid #000;
+	border-bottom: 5px solid #000;
+	background-color: #E50000;
+}
+.kopfbild {
+	max-width: 700px;
+	margin-bottom: 22px;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2); 
+}
+.middle-col {
+	max-width: 480px;
+	margin-left: -40px;
+	padding-right: 16px;
+}
+
+/* ==========================================================================
+   MAIN NAVIGATION
+   ========================================================================== */
+.main ul {
+	margin-left: 140px;
+	margin-top: 16px;
+}
+.main ul li a{
+	padding-left: 25px;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 44px;
+}
+/* ==========================================================================
+   SECTION CONTENT
+   ========================================================================== */
+.content .container {
+	background-color: #ECEEEF;
+	box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 0.2); 
+}   
+/*.main .container {
+
+}*/
+.content span,
+.content a {
+	color: #E50000;
+}
+.content .middle-col p {
+	margin-bottom: 28px;
+}
+/* ==========================================================================
+   SHOP TEASER
+   ========================================================================== */
+.shop-teaser {
+	margin-top: -105px;
+	margin-left: 140px;
+	max-width: 206px;
+}
+.shop-teaser span {
+	max-width: 206px;
+	background-color: #d40202;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-right: 44px;
+}
+img.warenkorb  {
+	margin-left: -20px;
+}
+.shop-teaser-content {
+	background-color: #fff;
+	padding: 20px 10px 5px 18px;
+	margin-top: -12px;
+}
+.shop-teaser-content p {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+}
+/* =========================================================================
+   TWO COLUMN TEASER
+   ========================================================================== */
+.two-col-teaser {
+	max-width: 460px;
+}   
+.two-col-teaser-header {
+	background-color: #DEE1E1;
+	padding-left: 12px;
+}
+.two-col-teaser-header h3{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 44px;
+	margin-bottom: 0px;
+}
+.two-col-teaser-content p {
+	background-color: #FFF;
+	padding: 12px 12px;
+	min-height: 123px;
+	min-width: 241px;
+	font-size: 12px;
+	line-height: 18px;
+	
+}
+
+/* =========================================================================
+   RIGHT COLUMN LINKS
+   ========================================================================== */
+.rigth-col {
+	margin-top: 50px;
+	margin-left: -50px;
+}
+.rigth-col a {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 36px;
+	color: #000;
+	text-decoration: none;
+}
+/* =========================================================================
+   MAP GRAPHIC
+   ========================================================================== */
+.map-graphic {
+	margin-top: 10px;
+	margin-bottom: 32px;
+}
+.map-graphic .container {
+	padding-right: 0;
+	padding-left: 0;
+}
+/* =========================================================================
+   FOOTER
+   ========================================================================== */
+footer .container{
+	box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.2); 
+	padding-bottom: 27px;
+}   
+footer input.form-control,
+footer textarea.form-control {
+	max-width: 219px;
+	background-color: #F2F3F4;
+	line-height: 18px;
+	color: #000;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	margin-bottom: 10px;
+	border: 1px solid #F2F3F4;
+}
+footer .rigth-col {
+	margin-top: 0;
+}
+.btn-footer {
+	color: #D40202;
+	border: none;
+	font-size: 13px;
+	line-height: 24px;
+	background-color: #fff;
+}
+.social-icons {
+	margin-right: 6px;
+}
+footer  a {
+	color: #D40202;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: bold;
+}
+footer .left-col {
+	font-size: 13px;
+	line-height: 20px;
+	color: #000;
+	max-width: 210px;
+	margin-right: 15px;
+}
+address {
+	margin-top: 22px;
+}
+/* =========================================================================
+   COPYRIGHT
+   ========================================================================== */
+.copyright .container {
+	margin-top: 8px;
+	background-color: #eceeef;
+	color: #969899;
+	padding-top: 8px;
+}
+.copyright .rigth-col a {
+	color: #969899;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: normal;
+}   
+.copyright .rigth-col {
+	margin-top: 0;
+}
+/* =========================================================================
+   FOOTER
+   ========================================================================== */            
+/* =========================================================================
+   FOOTER
+   ========================================================================== */
+
+
+} /*EOF MAIN-XS*/
