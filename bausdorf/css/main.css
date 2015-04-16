@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,800,400,300);
 /* ==========================================================================
    GENERAL
    ========================================================================== */
@@ -6,7 +7,8 @@ html{
   height: 100%;
 }
 body {
-   font-family: Arial, sans-serif;
+/*   font-family: Arial, sans-serif;*/
+   font-family: 'Raleway', sans-serif;
    /*background-color: cyan;*/
 }
 .btn-default {
@@ -30,7 +32,19 @@ header {
    height: 7px;
    margin-bottom:  7px;
 }
-
+.header-intro {
+   margin-top: 0px;
+   font: 700 14px / 22px Raleway;
+   font-size: 14px;
+   line-height: 22px;
+   color: rgba(0, 156, 217, 0.85);
+   text-transform: uppercase;
+   text-align: right;
+   letter-spacing: 0.15em;
+}
+.header-intro span {
+   color: rgba(0, 89, 169, 0.85);
+}
 /* ==========================================================================
    CAROUSEL
    ========================================================================== */
@@ -76,134 +90,51 @@ ul.content-list {
     margin-bottom: 130px;
 }
 /* ==========================================================================
-   SECONDARY NAVIGATION
+   NAVIGATION
    ========================================================================== */
-.secondary-navigation {
-   /*background-color: #dee1e1;*/
+.navbar {
+   min-height: 0;
+   margin-bottom: -1px;
 }
-.secondary-navigation ul {
-   background: #dee1e1;
-   margin-left: 140px;
-   margin-top: -96px;
-   margin-right: 15px;
-   padding-left: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
+.navbar-default {
+/*   background:  */
+    background-image: rgba(255,255,255, 0.7);;
+    border-color: transparent;
 }
-.secondary-navigation ul li a {
-   padding-left: 25px;
-   color: #7f868a;
-   font-size: 16px;
-   font-weight: bold;
-   line-height: 44px;
-   text-decoration: none;
+.navbar-default .navbar-nav > li > a {
+   color: #575b61;
+   font: 400 17px / 20px Raleway;
 }
-.secondary-navigation ul li.active {
-   list-style-position: inside;
-   list-style-image: url("../img/icon_pfeil_schwarz.png");
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .open > a {
+   background: #005BAB;
+   background-image: linear-gradient(to bottom, #005BAB 0px, #005BAB 100%);
+   background-repeat: repeat-x;
+   box-shadow:none;
 }
-.secondary-navigation ul li.active > a {
-   color: #000;
-   padding-left: 5px;
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #fff;
 }
-/*.secondary-navigation ul li:hover {
-   background-color: #E50000;
-   color: #FFF;
-}*/
-.secondary-navigation ul li:hover  a{
-   color: #000;
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
 }
-/* ==========================================================================
-   SHOP TEASER
-   ========================================================================== */
-.shop-teaser {
-   /*margin-top: -105px;*/
-   margin-left: 140px;
-   max-width: 206px;
+.navbar-nav > li > a {
+   padding-top: 7px;
+   padding-bottom: 7px;
+   margin-right: 19px;
 }
-.shop-teaser span {
-   max-width: 206px;
-   background-color: #d40202;
-   color: #FFF;
-   font-size: 16px;
-   font-weight: bold;
-   padding-top: 12px;
-   padding-bottom: 12px;
-   padding-right: 44px;
+.navbar-nav > li:last-child > a {
+    margin-right: -25px;
 }
-img.warenkorb  {
-   margin-left: -20px;
-}
-.shop-teaser-content {
-   background-color: #fff;
-   padding: 20px 10px 5px 18px;
-   margin-top: -12px;
-   max-width: 206px;
-}
-.shop-teaser-content p {
-   font-size: 12px;
-   font-weight: normal;
-   line-height: 18px;
-}
-/* =========================================================================
-   ONE COLUMN TEASER
-   ========================================================================== */
-.one-col-teaser {
-   background-color: #FFF;
-   max-width: 220px;
-   font-size: 12px;
-   font-weight: normal;
-   line-height: 18px;
-   margin-top: 50px;
-   margin-left: -75px;
-}
-.one-col-teaser h3{
-   font-size: 16px;
-   font-weight: bold;
-   line-height: 44px;
-   margin-bottom: 0px;
-   padding: 0 20px;
-}
-.one-col-teaser p {
-   margin-bottom: 0px;
-   padding: 10px 20px;
-}
-.one-col-teaser a,
-.one-col-teaser span  {
-   color: #e50000;
-   font-size: 12px;
-   font-weight: normal;
-   line-height: 18px;
-}
+
 /* =========================================================================
    TWO COLUMN TEASER
    ========================================================================== */
-.two-col-teaser {
-   max-width: 460px;
-}
-.two-col-teaser-header {
-   background-color: #DEE1E1;
-   padding-left: 12px;
-}
-.two-col-teaser-header h3{
-   font-size: 16px;
-   font-weight: bold;
-   line-height: 44px;
-   margin-bottom: 0px;
-}
-.two-col-teaser-content p {
-   background-color: #FFF;
-   padding: 12px;
-   min-height: 123px;
-   /*min-width: 230px;*/
-   font-size: 12px;
-   line-height: 18px;
-}
-.two-col-teaser-content img {
-   max-height: 120px;
-   padding-left: 0;
-   padding-right: 0;
-}
+
 /* =========================================================================
    RIGHT COLUMN LINKS
    ========================================================================== */
@@ -251,25 +182,7 @@ label {
 /* =========================================================================
    MAP GRAPHIC
    ========================================================================== */
-.map-graphic {
-   margin-top: 10px;
-   margin-bottom: 32px;
-   background: #e7e8ea; /* Old browsers */
-/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U3ZThlYSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmMWYxZjMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(left,  #e7e8ea 0%, #f1f1f3 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7e8ea), color-stop(100%,#f1f1f3)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left,  #e7e8ea 0%,#f1f1f3 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left,  #e7e8ea 0%,#f1f1f3 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left,  #e7e8ea 0%,#f1f1f3 100%); /* IE10+ */
-background: linear-gradient(to right,  #e7e8ea 0%,#f1f1f3 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e8ea', endColorstr='#f1f1f3',GradientType=1 ); /* IE6-8 */
 
-}
-.map-graphic .container {
-   padding-right: 0;
-   padding-left: 0;
-}
 /* =========================================================================
    FOOTER
    ========================================================================== */
@@ -639,5 +552,7 @@ address {
 /* ==========================================================================
    NEW RULES
    ========================================================================== */
+
+
 
 
