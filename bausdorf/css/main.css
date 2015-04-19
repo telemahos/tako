@@ -22,9 +22,15 @@ body {
    HEADER
    ========================================================================== */
 header {
-   min-height: 114px;
-/*   margin-bottom: 166px;*/
+   margin-bottom: -60px;
+   position: absolute;
+   left:0;
+   right:0;
+   margin-left:auto;
+   margin-right:auto;
+   z-index: 1;
    background: rgba(255,255,255,0.89);
+   min-height: 140px;
 }
 .header-border {
    background: #0259a9;
@@ -46,17 +52,86 @@ header {
    color: rgba(0, 89, 169, 0.85);
 }
 /* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+.navbar {
+   margin-bottom: 0;
+}
+
+.navbar {
+   min-height: 0;
+   margin-bottom: 0;
+/*   margin-bottom: -1px;*/
+/*   z-index: 100;*/
+}
+.navbar-default {
+    background: transparent;
+    background-image: transparent;
+    border-color: transparent;
+   box-shadow: none;
+}
+.navbar-default .navbar-nav > li > a {
+   color: #575b61;
+   font: 400 17px / 20px Raleway;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a {
+   background: #005BAB;
+   background-image: linear-gradient(to bottom, #005BAB 0px, #005BAB 100%);
+   background-repeat: repeat-x;
+   box-shadow:none;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navb
+
+     ar-nav > .active > a:hover {
+    color: #fff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #fff;
+}
+.navbar-nav > li > a {
+   padding-top: 7px;
+   padding-bottom: 7px;
+   margin-right: 19px;
+   margin-bottom: -1px;
+   margin-top: 1px;
+}
+.navbar-nav > li:last-child > a {
+    margin-right: -25px;
+}
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF;
+    background-color: #005BAB;
+}
+.navbar-collapse {
+   float: right;
+}
+
+/* ==========================================================================
    CAROUSEL
    ========================================================================== */
 .section-carousel {
+   border: 2px solid black;
+/*   position: relative;*/
    min-height: 390px;
+   background: #E7E6E4;
+/*   z-index: -10;*/
+/*   display: inline-block;*/
 }
 .carousel-img  {
-/*   margin-top: -56px;*/
-/*   margin-top: -166px;*/
-   position: absolute;
+/*   position: inherit;
    top: -150px;
+   left:0;
+   right:0;
+   margin-left:auto;
+   margin-right:auto;
    z-index: -1;
+   border: 2px solid black;*/
 }
 .carousel-border-dark {
    position: relative;
@@ -128,88 +203,16 @@ header {
    color: #0059a9;
    font: 600 23px Raleway;
 }
-
+.content-img {
+  margin-bottom: 20px;
+}
 
 
 /* ==========================================================================
    SECTION CONTENT
    ========================================================================== */
-.content  {
-   background-color: #ECEEEF;
-   box-shadow: 0px 11px 5px 0px rgba(0, 0, 0, 0.2);
-   padding-bottom: 130px;
-}
-/*.main .container {
 
-}*/
-.content span,
-.content a {
-   color: #E50000;
-}
-.content .middle-col p {
-   margin-bottom: 28px;
-}
-ul.content-list {
-    list-style-image:
-      url('../img/icon_pfeil_schwarz.png');
-    margin-bottom: 130px;
-}
-/* ==========================================================================
-   NAVIGATION
-   ========================================================================== */
-.navbar {
-   min-height: 0;
-   margin-bottom: 0;
-/*   margin-bottom: -1px;*/
-/*   z-index: 100;*/
-}
-.navbar-default {
-    background: transparent;
-    background-image: transparent;
-    border-color: transparent;
-   box-shadow: none;
-}
-.navbar-default .navbar-nav > li > a {
-   color: #575b61;
-   font: 400 17px / 20px Raleway;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .open > a {
-   background: #005BAB;
-   background-image: linear-gradient(to bottom, #005BAB 0px, #005BAB 100%);
-   background-repeat: repeat-x;
-   box-shadow:none;
-}
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navb
 
-     ar-nav > .active > a:hover {
-    color: #fff;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-    color: #fff;
-}
-.navbar-nav > li > a {
-   padding-top: 7px;
-   padding-bottom: 7px;
-   margin-right: 19px;
-   margin-bottom: -1px;
-   margin-top: 1px;
-}
-.navbar-nav > li:last-child > a {
-    margin-right: -25px;
-}
-.navbar-default .navbar-nav > li > a:focus,
-.navbar-default .navbar-nav > li > a:hover {
-    color: #FFF;
-    background-color: #005BAB;
-}
-.navbar-collapse {
-   float: right;
-}
 /* =========================================================================
    TWO COLUMN TEASER
    ========================================================================== */
@@ -217,17 +220,7 @@ ul.content-list {
 /* =========================================================================
    RIGHT COLUMN LINKS
    ========================================================================== */
-.rigth-col {
-   margin-top: 50px;
-   margin-left: -50px;
-}
-.rigth-col a {
-   font-size: 16px;
-   font-weight: bold;
-   line-height: 36px;
-   color: #000;
-   text-decoration: none;
-}
+
 
 /* =========================================================================
    FORM CONTROL
@@ -315,7 +308,7 @@ footer .container {
    ========================================================================== */
 @media(max-width:767px){
     body {
-        /*background: blue;*/
+        background: blue;
     }
     header {
        margin-top: 0;
@@ -343,11 +336,11 @@ footer .container {
    ========================================================================== */
 @media(min-width:768px){
     body {
-/*        background: red;*/
+        background: red;
     }
-    .left-col {
-      margin-left: 70px;
-   }
+    header {
+      min-height: 120px;
+    }
    .header-logo {
       margin-right: 13px;
    }
@@ -361,7 +354,7 @@ footer .container {
    ========================================================================== */
 @media(min-width:992px){
     body {
-/*    	background: orange;*/
+      background: orange;
     }
    .container {
       width: 960px;
@@ -369,13 +362,16 @@ footer .container {
    .carousel-border-light {
       margin-top: -30px;
    }
+   .main .content-txt {
+      margin-left: 40px;
+    }
 }
 /* ==========================================================================
    MEDIA QUERYS
    ========================================================================== */
 @media(min-width:1220px){
    body {
-/*        background: yellow;*/
+        background: white;
         min-height: 100%;
     }
     .container {
