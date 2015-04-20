@@ -8,6 +8,11 @@ html{
 }
 body {
    font-family: 'Raleway', sans-serif;
+   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+.row {
+  /*margin-right: 0;*/
 }
 /* ==========================================================================
    HEADER
@@ -22,9 +27,6 @@ header {
    z-index: 1;
    background: rgba(255,255,255,0.89);
    min-height: 140px;
-   -webkit-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
-   -moz-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
-           box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
 }
 .header-border {
    background: #0259a9;
@@ -105,14 +107,20 @@ header {
 }
 .dropdown-menu {
   background-color: rgba(255,255,255,0.89);
+  padding: 0;
+}
+.dropdown-menu > li > a {
+  padding: 11px 20px;
+  min-width: 190px;
 }
 .dropdown-menu>li>a:focus, 
 .dropdown-menu>li>a:hover {
-  background-color: #005BAB;
-  background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
-  background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
-  background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));
-  background-image: linear-gradient(to bottom,#005BAB 0,#005B8B 100%);
+  background-color: rgba(0,89,169, 0.87);
+  background-image: -webkit-linear-gradient(top,rgba(0,89,169, 0.87) 0,rgba(0,89,169, 0.87) 100%);
+  background-image: -o-linear-gradient(top,rgba(0,89,169, 0.87) 0,rgba(0,89,169, 0.87) 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(0,89,169, 0.87)),to(rgba(0,89,169, 0.87)));
+  background-image: linear-gradient(to bottom, rgba(0,89,169, 0.87) 0px, rgba(0,89,169, 0.87) 100%);
+
   /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);*/
   background-repeat: repeat-x;
 }
@@ -121,13 +129,7 @@ header {
   color: #fff;
 }
 /*###############*/
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:focus, 
-.navbar-default .navbar-nav > .active > a:hover {
-    color: #555;
-    background-color: #ffffff;
-    border-bottom: 3px solid #F07D00;
-}
+
 .container-fluid > .navbar-collapse, 
 .container-fluid > .navbar-header, 
 .container > .navbar-collapse, 
@@ -138,17 +140,17 @@ header {
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
     background-color: #ffffff;
-    border-color: #f07d00;
+    border-color: #005BAB;
 }
 .navbar-default .navbar-toggle:focus .icon-bar,
 .navbar-default .navbar-toggle:hover .icon-bar {
-    background-color: #f07d00;
+    background-color: #005BAB;
 }
 .navbar-default .navbar-nav > li > a:focus, 
 .navbar-default .navbar-nav > li > a:hover {
     color: #333;
     background-color: transparent;
-    border-bottom: 3px solid #f07d00;
+    /*border-bottom: 3px solid #f07d00;*/
 }
 
 /* ==========================================================================
@@ -168,12 +170,34 @@ header {
    position: relative;
    min-height: 59px;
    background: #0059A9;
+   -webkit-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+   -moz-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+           box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
 }
 
 .carousel-border-light {
+  position: relative;
    height: 10px;
    background: rgba(147,178,207, 0.5);
    margin-top: -30px;
+}
+/*For inner Pages*/
+.carousel-border-dark-inner {
+   position: relative;
+   min-height: 28px;
+   background: #0059A9;
+   -webkit-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+   -moz-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+           box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+   width: 100%;
+}
+
+.carousel-border-light-inner {
+  position: relative;
+   height: 14px;
+   background: rgba(0,89,169, 0.37);
+   margin-top: -30px;
+   width: 100%;
 }
 
 /* ==========================================================================
@@ -239,10 +263,18 @@ header {
   padding-right: 40px;
   margin-bottom: 20px;
 }
-.content-img img {
+.content-img img,
+.content-innerPage-img  {
   -webkit-box-shadow: 2px 3px 3px 0px rgba(26, 24, 28, 0.27);
    -moz-box-shadow: 2px 3px 3px 0px rgba(26, 24, 28, 0.27);
            box-shadow: 2px 3px 3px 0px rgba(26, 24, 28, 0.27);
+}
+.content-innerPage-img {
+  margin-bottom: 20px;
+}
+.main h3 {
+  color: #575b61;
+   font: 600 15px / 22px Raleway;
 }
 
 
@@ -334,6 +366,49 @@ footer .container {
       overflow: auto;
       width: 100%
     }
+
+    /*Wagschal NavBar in Small Screens*/
+    .navbar-default .navbar-collapse, 
+    .navbar-default .navbar-form {
+        border-color: #fff;
+    }
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:focus, 
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > li > a:hover  {
+        background-image: linear-gradient(to bottom, #005BAB 0px, #005BAB 100%);
+        background-repeat: repeat-x;
+        border-bottom: none;
+        color: #fff;
+    }
+    .navbar-default .navbar-nav > li > a {
+      background-image: linear-gradient(to bottom, #CDE2F5 0px, #CDE2F5 100%);
+        background-repeat: repeat-x;
+        color: #656464;
+        margin-bottom: 2px;
+    }
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+      background-color: #005BAB;
+      -webkit-box-shadow:rgba(0, 0, 0, 0.0742188) 0 3px 9px inset;
+      background-image:-webkit-gradient(linear, 0 0%, 0 100%, from(#005BAB), to(#005BAB));
+      background-repeat:repeat no-repeat;
+      box-shadow:rgba(0, 0, 0, 0.0742188) 0 3px 9px inset;
+    }
+    .navbar-default .navbar-nav > li > a {
+      background-color: #CDE2F5;
+        color: #656464;
+    }
+    .navbar-default .navbar-nav > li > a:hover {
+      background-color: #005BAB;
+        color: #ffffff;
+    }
+    /* Change the last Li child right margin */
+    .navbar-nav > li:last-child > a {
+        margin-right: 19px;
+    }
+
+
     .section-carousel {
       /*min-height: 390px;*/
       padding-top: 170px;
@@ -355,7 +430,7 @@ footer .container {
    ========================================================================== */
 @media(min-width:768px){
     body {
-        background: red;
+        /*background: red;*/
     }
     header {
       min-height: 120px;
@@ -373,7 +448,7 @@ footer .container {
    ========================================================================== */
 @media(min-width:992px){
     body {
-      background: orange;
+      /*background: orange;*/
     }
    .container {
       width: 960px;
@@ -390,7 +465,7 @@ footer .container {
    ========================================================================== */
 @media(min-width:1220px){
    body {
-        background: white;
+        /*background: white;*/
         min-height: 100%;
     }
     .container {
