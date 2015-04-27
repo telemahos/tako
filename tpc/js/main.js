@@ -9,8 +9,8 @@ jQuery(function($){
 												   
 		// Components
 		slides 		:  	[			// Slideshow Images
-				// {image : 'http://localhost/clients/tako/img/textur-web.jpg', title : 'Image Credit: Maria Kazvan'}
-				{image : 'http://bootstrap4me.com/wagschal/img/textur-web.jpg', title : 'Image Credit: Maria Kazvan'}
+				{image : 'http://localhost/clients/tako/tpc/img/hg.jpg', title : 'Image Credit: Maria Kazvan'}
+				// {image : 'http://bootstrap4me.com/tpc/img/hg.jpg', title : 'Image Credit: Maria Kazvan'}
 				
 		]
 	});
