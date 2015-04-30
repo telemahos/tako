@@ -33,7 +33,7 @@ header {
 	/*min-height: 157px;*/
 }
 .img-header {
-	padding-top: 33px;
+	padding-top: 36px;
 }
 .header-logo img {
   margin-top: 12px;
@@ -47,7 +47,7 @@ header {
 	box-shadow: 2px 4px 5px 0.00px rgba(26, 23, 27, 0.15);
 	height: 26px;
 	margin-bottom:  7px;
-	margin-right: -40px
+	margin-right: 0px
 }
 .header-border a {
 	color: #FFF;
@@ -62,7 +62,7 @@ header {
 .main-content h2 {
 	color: rgba(18,89,143, 0.9);
 	font-size: 37px;
-	padding-top: 19px;
+	padding-top: 2px;
 	margin-bottom: 5px;
 	font-weight: normal;
 }
@@ -81,6 +81,10 @@ header {
 /* ==========================================================================
 	NAVBAR
 	========================================================================== */
+/*Open Bootstrap Navbar on hover*/
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+ }*/
 .navbar-default {
 	 background-image: linear-gradient(to bottom, #FFF 0px, #fff 100%);
 	 background-repeat: repeat-x;
@@ -110,8 +114,8 @@ header {
 	 /*margin-bottom: 1px;*/
 }
 .navbar-nav > li > a {
-	padding-bottom: 12px;
-	padding-top: 12px;
+	padding-bottom: 8px;
+	padding-top: 16px;
 	line-height: 12px;
 	margin-bottom: 0;
 }
@@ -139,7 +143,7 @@ header {
 .container > .navbar-collapse, 
 .container > .navbar-header {
 	 margin-right: 0px;
-	 margin-left: -30px;
+	 margin-left: -29px;
 }
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
@@ -200,7 +204,7 @@ header {
 .container > .navbar-collapse, 
 .container > .navbar-header {
 	 margin-right: 0px;
-	 margin-left: -30px;
+	 margin-left: -29px;
 }
 .navbar-default .navbar-toggle:focus, 
 .navbar-default .navbar-toggle:hover {
@@ -245,11 +249,13 @@ header {
 	-webkit-box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
 	-moz-box-shadow:  3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
 	box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
-	padding: 0 13px 47px 33px;
+	/*padding: 0 13px 47px 33px;*/
+	padding: 0px 47px 27px;
 	margin-top: 20px;
 }
 .main-wrapper {
 	margin-top: -2px;
+	padding-top: 15px;
 }
 .main-content {
 	 color: #010101;
@@ -279,7 +285,7 @@ header {
 	SIDEBOX
 	========================================================================== */
 aside {
-	margin-top: 85px;
+	margin-top: 65px;
 }
 .main-content .lead {
 	 margin-bottom: 0;
@@ -295,6 +301,9 @@ aside {
 	position: relative;
 	overflow: hidden;
 	margin: 0 -5px;
+}
+.teaser-img {
+	margin-bottom: 2px;
 }
 .section-teaser .container {
 	padding-right: 0;
@@ -316,6 +325,8 @@ aside {
 	font-size: 27px;
 	line-height: 42px;
 	color:rgba(255,255,255, 0.90);
+	display: block;
+	text-decoration: none;
 }
 .teaser ul li {
 	background: rgba(255,255,255, 1);
@@ -498,6 +509,7 @@ footer .list-inline > li {
 	.teaser-header {
 		top: 117px;
 	}
+	
 	footer {
 		height: 320px;
 	}
@@ -531,6 +543,9 @@ footer .list-inline > li {
 	 .header-content {
 		/*width: 100%;*/
 	 }
+	 .header-border ul {
+	    margin-right: -20px;
+	}
 	.navbar-default a {
 		font-size: 14px;
 	}
@@ -543,8 +558,13 @@ footer .list-inline > li {
 	  background: none; 
 	  box-shadow: none
 	}
+
+
+	.teaser {
+		margin: 0;
+	}
 	.teaser-header {
-		top: 76px;
+		top: 81px;
   	}
 	.teaser-header a {
 		font-size: 20px;
@@ -555,6 +575,9 @@ footer .list-inline > li {
 	.teaser-content p {
   		font-size: 14px;
   	}
+
+  	
+
 	footer {
 		height: 320px;
 	}
@@ -620,6 +643,9 @@ footer .list-inline > li {
 		margin-left: -10px;
 		margin-right: -10px;
 	}
+	.teaser {
+		margin: 0 -5px;
+	}
 	.teaser .col-lg-4, 
 	.teaser .col-md-4 {
 	    padding-right: 13px;
@@ -639,15 +665,15 @@ footer .list-inline > li {
 	 .container {
 		width: 960px;
 	}
-	.header-border {
-		margin-right: -40px;	
-	}
 	.header-border ul {
-		margin-right: -10px;	
+		margin-right: -20px;
 	}
 	.section-teaser .row  {
 		margin-left: -10px;
 		margin-right: -10px;
+	}
+	.teaser {
+		margin: 0 -5px;
 	}
 	.teaser .col-lg-4, 
 	.teaser .col-md-4 {
