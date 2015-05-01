@@ -16,51 +16,77 @@ jQuery(function($){
 	});
 });
 
-$(document).ready(function() {
+// $(document).ready(function() {
+//      function toggleNavbarMethod() {
+//          console.log($(window).width());
+//          console.log("width > 768");
+//          $('ul.nav li.dropdown').hover(function() {
+//             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+//             $(this).addClass('active');
+//          }, function() {
+//             $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+//             $(this).removeClass('active');
+//          });
+//      }
 
+//      $(window).on('load resize', function(){
+//          // if(document.documentElement.clientWidth > 768) {
+//          $('.dropdown').mouseenter(function(){
+//             if(!$('.navbar-toggle').is(':visible')) {
+//                toggleNavbarMethod();
+//             }
+//          });
+//      });
+// });
 
+// $( document ).ready(function() {
 
-        function toggleNavbarMethod() {
+//     $( 'ul.nav li.dropdown' ).hover(function() {
+// // console.log("hover");
+//         // you could also use this condition: $( window ).width() >= 768
+//         if ($('.navbar-toggle').css('display') === 'none'
+//             && false === ('ontouchstart' in document)) {
+// // console.log("1");
+//             $( '.dropdown-toggle', this ).trigger( 'click' );
+//         }
+//     }, function() {
+//         if ($('.navbar-toggle').css('display') === 'none'
+//             && false === ('ontouchstart' in document)) {
+// // console.log("2");
+//             $( '.dropdown-toggle', this ).trigger( 'click' );
+//         }
+//     });
 
-            console.log($(window).width());
+// });
 
-            if ($(window).width() > 768 ) {
-                $('ul.nav li.dropdown').hover(function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-                  $(this).addClass('active');
-                }, function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-                  $(this).removeClass('active');
-                });
-            }
-            else {
-                $('ul.nav li.dropdown').click(function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-                  $(this).addClass('active');
-                }, function() {
-                  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-                  $(this).removeClass('active');
-                });
-            }
+// $('.dropdown').mouseenter(function(){
+//     if(!$('.navbar-toggle').is(':visible')) { // disable for mobile view
+//         if(!$(this).hasClass('open')) { // Keeps it open when hover it again
+//             $('.dropdown-toggle', this).trigger('click');
+//         }
+//     }
+// });
+
+// function setInactive()  {
+//    $(".dropdown a").blur();
+// }
+
+$('.dropdown').on({
+   mouseenter: function() {
+      console.log('enter');
+      if(!$('.navbar-toggle').is(':visible')) { // disable for mobile view
+        if(!$(this).hasClass('open')) { // Keeps it open when hover it again
+            $('.dropdown-toggle', this).trigger('click');
         }
+      }
+   },
+   mouseleave: function() {
+      var $self = $(this);
+      setTimeout(function(){
+         console.log('bye!');
+         // $self.removeClass('open');
+         // setInactive();
+      }, 800);
 
-        $(window).on('load resize', function(){
-            toggleNavbarMethod();
-        });
-        // $( window ).resize(function() {
-        //     toggleNavbarMethod();
-        // });
-
-        // toggleNavbarMethod();
-        // $(window).on("resize",function() {
-        //     return false;
-        //     toggleNavbarMethod();
-        // });
-
-
-
-
-
-
-});
-
+   }
+})
