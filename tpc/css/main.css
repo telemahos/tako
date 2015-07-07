@@ -221,6 +221,12 @@ header {
 .navbar-collapse {
     padding-left: 14px;
 }
+/*.navbar-default .navbar-nav > li.dropdown > a:hover {
+    border-bottom: 0;
+}*/
+.dropdown-menu {
+	border-top: 1px solid #A5A4A4;
+}
 /* ==========================================================================
 	CAROUSEL
 	========================================================================== */
