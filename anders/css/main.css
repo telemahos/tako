@@ -1,8 +1,13 @@
-
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,300italic,300,200,600italic,200italic,700italic,700);
 
 /* ==========================================================================
    General
    ========================================================================== */
+
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   background: #FFF;
+}
 .container {
    width: 960px;
 }
@@ -10,18 +15,77 @@
 /* ==========================================================================
    Navbar
    ========================================================================== */
-.navbar .container{
+.navbar {
     min-height: 100px;
-    background: green;
+    background: #e7edf0;
 }
 .nav > li > a {
     text-transform: uppercase;
+    color: #484848;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 10px 10px;
+}
+.nav > li.active > a {
+   color: #000000;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+.nav > li:hover > a,
+.nav > li:focus > a {
+   padding-bottom: 43px;
+   margin-bottom: -2px;
+   border-bottom: 2px solid #26668d;
+}
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+   padding-bottom: 43px;
+   margin-bottom: -2px;
+   background-color: transparent;
+   border-bottom: 2px solid #26668d;
+}
+.dropdown-menu {
+    padding: 0px 0px;
+}
+.navbar-nav > li > .dropdown-menu,
+.navbar-nav > li:hover > .dropdown-menu,
+.navbar-nav > li:focus > .dropdown-menu
+{
+    margin-top: 4px;
+}
+.dropdown-menu > li > a {
+   font-size: 18px;
+   font-weight: 300;
+   color: #686868;
+   padding: 8px 20px;
+   min-width: 193px;
+   /*border-bottom: 1px solid #26668d;*/
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #5084a3;
+    background-image: linear-gradient(to bottom, #5084a3 0px, #5084a3 100%);
+    background-repeat: repeat-x;
+    color: #fff;
 }
 .container > .navbar-header,
 .container > .navbar-collapse {
-    margin-top: 21px;
+    margin-top: 25px;
 }
-
+.brand-logo {
+   margin-top: 0px;
+}
+ul .brand-logo {
+   list-style-type: none;
+}
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
 /* ==========================================================================
    Header
    ========================================================================== */
@@ -47,6 +111,38 @@
    Footer
    ========================================================================== */
 
+
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(max-width:767px){
+    body {
+        background: blue;
+    }
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(min-width:768px){
+    body {
+        background: red;
+    }
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(min-width:992px){
+    body {
+      background: green;
+    }
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(min-width:1200px){
+   body {
+    }
+}
 
 
 
