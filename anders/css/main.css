@@ -92,8 +92,9 @@ body {
 .brand-logo {
    margin-top: 0px;
 }
-ul .brand-logo {
-   list-style-type: none;
+
+.navbar-brand > img {
+   margin-top: 10px;
 }
 .navbar-collapse {
     padding-right: 0;
@@ -237,8 +238,13 @@ ul .brand-logo {
    }
    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
        padding-bottom: 10px;
+       margin-bottom: -2px;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+       color: #656464;
+       background: #c6c6c6;
        margin-bottom: 2px;
-    }
+   }
 }
 /* ==========================================================================
    MEDIA QUERYS
@@ -247,6 +253,10 @@ ul .brand-logo {
     body {
         background: red;
     }
+    .nav > li > a {
+       font-size: 11px;
+       font-weight: 600;
+   }
 }
 /* ==========================================================================
    MEDIA QUERYS
@@ -258,6 +268,10 @@ ul .brand-logo {
     .container {
       width: 960px;
     }
+    .nav > li > a {
+       font-size: 17px;
+       font-weight: 300;
+   }
 }
 /* ==========================================================================
    MEDIA QUERYS
