@@ -5,17 +5,20 @@
    ========================================================================== */
 
 body {
-   font-family: 'Source Sans Pro', sans-serif;
-   background: #FFF;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 0.8px;
+    background: #FFF;
 }
-
+section {
+     margin-bottom: 30px;    
+}
 
 /* ==========================================================================
    Navbar
    ========================================================================== */
 .navbar {
     min-height: 100px;
-    background: #e7edf0;
+    background: rgba(231,237,240, 0.8);
 }
 .nav > li > a {
     text-transform: uppercase;
@@ -100,31 +103,157 @@ body {
     padding-right: 0;
     padding-left: 0;
 }
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
 
 /* ==========================================================================
-   Slider
+   Carousel
    ========================================================================== */
-
-
+.section-carousel .container {
+/*     width: 990px;   */
+}
+.carousel-inner .item {
+     min-height: 300px;   
+}
+.carousel-control {
+    top: 40%;
+    opacity: 1;
+    margin: 0 -30px;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.right {
+    right: 0px;
+    left: auto;
+    background-image: none;
+}
 /* ==========================================================================
    Info Boxen
    ========================================================================== */
-
-
+.infobox-content img {
+  float: left;
+  margin: 5px 20px 0 0;
+}
+.infobox-content {
+   background: rgba(255,255,255,0.4);
+    padding: 15px 20px;
+    min-height: 224px;
+    max-height: 224px;
+    font: 300 16px / 20px 'Source Sans Pro';
+    color: #3c3c3c;
+    box-shadow: 1px 3px 5px 0.00px rgba(26, 24, 28, 0.14);
+}
+.infobox-header h2 {
+    font: 300 22px / 55.181px 'Source Sans Pro';   
+    color: #ffffff;
+    padding: 0 20px;    
+}
+.rechteck1 {
+    background: url(../img/Rechteck-1.png) no-repeat;
+    max-width: 300px;
+    max-height: 51px;
+    margin-bottom: 2px;
+}
+.rechteck1 h2 {
+    line-height: 51px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+.rechteck2 {
+    background: url(../img/Rechteck-2.png) no-repeat;
+    max-width: 300px;
+    max-height: 44px;
+    margin-top: 28px;
+    margin-bottom: 2px;
+}
+.rechteck2 h2 {
+    line-height: 44px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.rechteck3 {
+    background: url(../img/Rechteck-3.png) no-repeat;
+    max-width: 300px;
+    max-height: 43px;
+    text-align: right;
+    margin-top: 28px;
+}
+.rechteck3 h2 {
+    line-height: 43px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+.activities {
+    background: #ffffff;
+    margin-bottom: 1px;
+    padding-left: 15px;
+    box-shadow: 2px 3px 4px 0.00px rgba(26, 24, 28, 0.18);
+}
+.activities a {
+    color: #26668d;
+    font: 600 16px / 29px 'Source Sans Pro';
+}
+.some-space {
+    min-height: 10px;
+}
 /* ==========================================================================
    Profil
    ========================================================================== */
-
-
-
+.profilbox-header h2 {
+    font: 300 22px / 55.181px 'Source Sans Pro';   
+    color: #ffffff;
+    padding: 0 20px;    
+}
+.rechteck4 {
+    background: url(../img/Rechteck-4.png) no-repeat;
+    max-width: 236px;
+    max-height: 45px;
+    margin-top: 28px;
+}
+.rechteck4 h2 {
+    line-height: 45px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+.profilbox-content {
+   background: rgba(255,255,255,0.4);
+    padding: 30px;
+    font: 300 16px / 20px 'Source Sans Pro';
+    color: #3c3c3c;
+}
+.profilbox-content img {
+    float: left;
+    margin-right: 40px;
+}
+.profilbox-content p.lead {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font: 300 24px / 55.181px 'Source Sans Pro';
+    color: #57666d;
+}
+.profilbox-content p {
+    font: 300 16px / 20px 'Source Sans Pro';
+    color: #3c3b3b;
+    margin-bottom: 3px;
+}
+.profilbox-content a {
+    font: 400 16px / 24px 'Source Sans Pro';
+    color: #26668d;
+    text-decoration: underline;
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
-
+footer .container {
+    margin-top: -29px;
+    width: 960px;
+    background: #ffffff;  
+    min-height: 45px;
+}
+footer a {
+    font: 300 15px / 45px 'Source Sans Pro';
+    color: #3c3c3c;
+}
 
 /* ==========================================================================
    MEDIA QUERYS
@@ -266,7 +395,7 @@ body {
       background: green;
     }
     .container {
-      width: 960px;
+      width: 990px;
     }
     .nav > li > a {
        font-size: 17px;
