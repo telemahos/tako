@@ -7,18 +7,34 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.8px;
-    background: #FFF;
+    background: transparent;
 }
 section {
      margin-bottom: 30px;    
 }
-
+.section-carousel {
+   margin-bottom: -40px;    
+}
+.section-footer {
+   margin-bottom: 0px;    
+}
 /* ==========================================================================
    Navbar
    ========================================================================== */
 .navbar {
     min-height: 100px;
-    background: rgba(231,237,240, 0.8);
+    background: rgba(231,237,240, 0.7);
+    box-shadow: 2px 3px 5px 0px rgba(26, 24, 28, 0.14); 
+}
+/*.navbar-fixed-top {
+  top: -70px; 
+}*/
+.navbar-fixed-top {
+  position: static; /* this can also be static */
+}
+.navbar-default {
+    /*background-color: #F8F8F8;*/
+    border-color: transparent;
 }
 .nav > li > a {
     text-transform: uppercase;
@@ -109,12 +125,36 @@ section {
    ========================================================================== */
 .section-carousel .container {
 /*     width: 990px;   */
+  padding-right: 20px;
+      padding-left: 20px;
 }
 .carousel-inner .item {
-     min-height: 300px;   
+     min-height: 350px;   
+
+}
+.carousel-caption {
+   right: 20%;
+   left: 20%;
+   padding-bottom: 30px;
+   /*width: 100%;*/
+   /*width: 990px;*/
+}
+.carousel-caption h1 {
+   margin-top: 80px;
+   font: 300 italic 55px / 65px 'Source Sans Pro';
+   margin-left: -160px;
+}
+.carousel-caption p {
+   font: 600 20px / 20px 'Source Sans Pro';
+   text-transform: uppercase;
+   width: 100%;
+   text-align: center;
+}
+.carousel-caption-right {
+   margin-left: 290px;
 }
 .carousel-control {
-    top: 40%;
+    top: 30%;
     opacity: 1;
     margin: 0 -30px;
 }
@@ -134,7 +174,7 @@ section {
   margin: 5px 20px 0 0;
 }
 .infobox-content {
-   background: rgba(255,255,255,0.4);
+   background: rgba(255,255,255,0.5);
     padding: 15px 20px;
     min-height: 224px;
     max-height: 224px;
@@ -143,7 +183,7 @@ section {
     box-shadow: 1px 3px 5px 0.00px rgba(26, 24, 28, 0.14);
 }
 .infobox-header h2 {
-    font: 300 22px / 55.181px 'Source Sans Pro';   
+    font: 300 21px / 51px 'Source Sans Pro';   
     color: #ffffff;
     padding: 0 20px;    
 }
@@ -215,7 +255,7 @@ section {
     text-transform: uppercase;
 }
 .profilbox-content {
-   background: rgba(255,255,255,0.4);
+   background: rgba(255,255,255,0.5);
     padding: 30px;
     font: 300 16px / 20px 'Source Sans Pro';
     color: #3c3c3c;
@@ -244,27 +284,34 @@ section {
 /* ==========================================================================
    Footer
    ========================================================================== */
-footer .container {
+.section-footer .footer-text  {
     margin-top: -29px;
-    width: 960px;
     background: #ffffff;  
     min-height: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-footer a {
-    font: 300 15px / 45px 'Source Sans Pro';
+.section-footer a {
+    font: 300 13px / 45px 'Source Sans Pro';
     color: #3c3c3c;
 }
-
+.footer-text {
+   text-align: right;
+}
 /* ==========================================================================
    MEDIA QUERYS
    ========================================================================== */
 @media(max-width:767px){
     body {
-        background: blue;
+        /*background: blue;*/
     }
     .container {
-      padding-right: 28px;
-      padding-left: 14px;
+      /*padding-right: 28px;
+      padding-left: 14px;*/
+      /*padding-right: 40px;
+      padding-left: 0px;*/
+      padding-right: 20px;
+      padding-left: 20px;
     }
     .nav {
         padding-left: 30px;
@@ -345,6 +392,9 @@ footer a {
     }
 
     /*##############*/
+    .navbar-collapse.in {
+        overflow-y:  none;
+    }
    .nav > li:hover > a,
    .nav > li:focus > a {
       padding-bottom: 10px;
@@ -374,17 +424,102 @@ footer a {
        background: #c6c6c6;
        margin-bottom: 2px;
    }
+   /*Carousel*/
+   .section-carousel {
+       margin-bottom: -120px;
+   }
+   .carousel-inner .item {
+        min-height: 200px;
+    }
+   .carousel-caption {
+       top: 0px;
+       right: 10%;
+       left: 10%;
+   }
+   .carousel-control {
+       top: 13%;
+       opacity: 1;
+       margin: 0px -30px;
+   }
+   .carousel-caption h1 {
+      margin-top: 0px;
+      font: italic 400 18px/32px "Source Sans Pro";
+      margin-left: 0px;
+   }
+   .carousel-caption p {
+      font: 600 10px/20px "Source Sans Pro";
+   }
+   .carousel-caption-right {
+      margin-left: 30px;
+   }
+   .carousel-caption-last {
+      margin-left: 10px;
+   }
+   .carousel-control.left img {
+      padding-left: 0px;
+      height: 60px;
+   }
+   .carousel-control.right img {
+      padding-left: 0px;
+      height: 60px;
+   }
+   .carousel-control {
+      margin: 0px 0px;
+   }
+   /*InfoBox*/
+   .infobox-header h2 {
+       font: 300 18px/51px "Source Sans Pro";
+   }
+   .infobox-content {
+      min-height: auto;
+   }
+   /*Footer*/
+   .section-footer .container {
+      /*max-width: 95%;*/
+    }
+    .footer-text {
+      text-align: center;
+   }
 }
 /* ==========================================================================
    MEDIA QUERYS
    ========================================================================== */
 @media(min-width:768px){
     body {
-        background: red;
+        /*background: red;*/
     }
     .nav > li > a {
        font-size: 11px;
        font-weight: 600;
+       padding: 6px;
+   }
+   .nav > li:hover > a, 
+   .nav > li:focus > a {
+      padding-bottom: 47px;
+   }
+   .navbar-default .navbar-nav > .active > a, 
+   .navbar-default .navbar-nav > .active > a:hover, 
+   .navbar-default .navbar-nav > .active > a:focus {
+      padding-bottom: 47px;
+   }
+   .nav .open > a, .nav .open > a:hover, 
+   .nav .open > a:focus {
+      padding-bottom: 47px;
+   }
+   /*Carousel*/
+   .carousel-caption h1 {
+       margin-top: 0px;
+       font: italic 300 35px/55px "Source Sans Pro";
+       margin-left: -160px;
+   }
+   .carousel-caption {
+      top: 0;
+   }
+   .carousel-control {
+      top: 15%;
+   }
+   .carousel-caption p {
+      font: 600 15px/20px "Source Sans Pro";
    }
 }
 /* ==========================================================================
@@ -392,14 +527,22 @@ footer a {
    ========================================================================== */
 @media(min-width:992px){
     body {
-      background: green;
+      /*background: green;*/
     }
+    h1 {
+      margin: 0.5em 0px;
+   }
     .container {
       width: 990px;
     }
     .nav > li > a {
        font-size: 17px;
        font-weight: 300;
+   }
+   .carousel-caption h1 {
+      margin-top: 0px;
+      font: 300 italic 55px / 65px 'Source Sans Pro';
+      margin-left: -160px;
    }
 }
 /* ==========================================================================
