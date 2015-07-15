@@ -27,10 +27,10 @@ section {
     box-shadow: 2px 3px 5px 0px rgba(26, 24, 28, 0.14); 
 }
 /*.navbar-fixed-top {
-  top: -70px; 
+  top: -100px; 
 }*/
 /*.navbar-fixed-top {
-  position: fixed; 
+  position: static; 
 }*/
 .navbar-default {
     /*background-color: #F8F8F8;*/
@@ -290,6 +290,9 @@ hr {
     margin-top: 60px;
     margin-bottom: 40px;
 }
+.section-content {
+  margin-top: 10px;
+}
 .content-header {
     background: url(../img/Rechteck-5.png) no-repeat;
     max-width: 322px;
@@ -351,10 +354,18 @@ article h3 {
       padding-right: 20px;
       padding-left: 20px;
     }
+    .navbar-fixed-top {
+      margin-top: -100px;
+      position: static; 
+    }
     .nav {
-        padding-left: 30px;
+        padding-left: 15px;
         padding-bottom: 8px;
+        padding-right: 15px;
      }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+      border-color: transparent;
+    }
    .dropdown-menu > .active > a,
    .dropdown-menu > .active > a:hover,
    .dropdown-menu > .active > a:focus {
@@ -431,7 +442,7 @@ article h3 {
 
     /*##############*/
     .navbar-collapse.in {
-        overflow-y:  none;
+        overflow-y:  visible;
     }
    .nav > li:hover > a,
    .nav > li:focus > a {
@@ -554,7 +565,7 @@ article h3 {
       top: 0;
    }
    .carousel-control {
-      top: 15%;
+      top: 30%;
    }
    .carousel-caption p {
       font: 600 15px/20px "Source Sans Pro";
@@ -578,7 +589,7 @@ article h3 {
        font-weight: 300;
    }
    .carousel-caption h1 {
-      margin-top: 0px;
+      margin-top: 30px;
       font: 300 italic 55px / 65px 'Source Sans Pro';
       margin-left: -160px;
    }
