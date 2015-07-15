@@ -29,9 +29,9 @@ section {
 /*.navbar-fixed-top {
   top: -70px; 
 }*/
-.navbar-fixed-top {
-  position: static; /* this can also be static */
-}
+/*.navbar-fixed-top {
+  position: fixed; 
+}*/
 .navbar-default {
     /*background-color: #F8F8F8;*/
     border-color: transparent;
@@ -280,6 +280,44 @@ section {
     font: 400 16px / 24px 'Source Sans Pro';
     color: #26668d;
     text-decoration: underline;
+}
+/* ==========================================================================
+   Article
+   ========================================================================== */
+hr {
+    color:transparent;
+/*    height: 1px;*/
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.content-header {
+    background: url(../img/Rechteck-5.png) no-repeat;
+    max-width: 322px;
+    max-height: 45px;
+    margin-top: 28px;   
+}
+.content-header h2 {
+    font: 300 22px / 55.181px 'Source Sans Pro';   
+    color: #ffffff;
+    padding: 0 20px;  
+    line-height: 45px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+.content-text {
+    background: rgba(255,255,255,0.5);
+    padding: 20px 48px 48px;
+    font: 300 16px / 20px 'Source Sans Pro';
+    color: #3c3c3c;
+}
+.content-text img {
+    float: left;
+    margin-right: 40px;
+}
+article h3 {
+    font: 300 24px / 55.181px 'Source Sans Pro';
+    color: #57666d;
+    text-transform: uppercase;
 }
 /* ==========================================================================
    Footer
