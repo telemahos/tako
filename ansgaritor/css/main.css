@@ -1,0 +1,368 @@
+
+/* ==========================================================================
+   GENERAL
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Istok+Web:400,400italic,700,700italic);
+
+html{
+  height: 100%;
+}
+body {
+	font-family: 'Istok Web', sans-serif;
+	font-weight: lighter;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+header {
+	background-color: rgba(255,255,255, 0.85);
+/*    margin-bottom: 15px;*/
+}
+.header-logo img {
+    margin: 17px 32px 10px 0;
+}
+.after-header {
+    background: url(../img/Ebene-12.png);   
+    min-height: 15px;
+}
+/* ==========================================================================
+   NAVBAR
+   ========================================================================== */
+.navbar-default {
+    border-radius: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    -webkit-box-shadow: 5px 9px 11px 0px rgba(26, 24, 28, 0.14); 
+	-moz-box-shadow:    5px 9px 11px 0px rgba(26, 24, 28, 0.14);
+    box-shadow: 5px 9px 11px 0px rgba(26, 24, 28, 0.14);
+}
+.navbar-default {
+    background: transparent;
+    border-color: transparent;
+}
+.navbar-default a {
+	font-size: 14px;
+	font-weight: 400;
+    color: #696a6a;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #000000;
+    background-color: transparent;
+    border-bottom: 3px solid #e95317;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus, 
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #000000;
+    background-color: transparent;
+}
+.navbar {
+    margin-bottom: 0;
+    min-height: 44px;
+}
+.nav > li > a {
+    padding: 0px 19px;
+}
+.navbar-nav > li > a {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    line-height: 14px;
+    margin-bottom: -1px;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .open > a {
+    background-image: linear-gradient(to bottom, #ffffff 0px, #ffffff 100%);
+    box-shadow: none;
+    color: #000000;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #000000;
+    background-color: transparent;
+    border-bottom: 3px solid #F07D00;
+}
+.container-fluid > .navbar-collapse, 
+.container-fluid > .navbar-header, 
+.container > .navbar-collapse, 
+.container > .navbar-header {
+    margin-right: 0px;
+    margin-left: -30px;
+}
+.navbar-default .navbar-toggle:focus, 
+.navbar-default .navbar-toggle:hover {
+    background-color: #ffffff;
+    border-color: #e95317;
+}
+.navbar-default .navbar-toggle:focus .icon-bar,
+.navbar-default .navbar-toggle:hover .icon-bar {
+    background-color: #e95317;
+}
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+    color: #333;
+    background-color: transparent;
+    border-bottom: 3px solid #f07d00;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 2px;
+    min-width: 193px;
+}
+.dropdown-menu {
+    padding: 0;
+}
+.dropdown-menu > li > a {
+    line-height: 35px;
+    
+}
+.dropdown-menu > .active > a, 
+.dropdown-menu > .active > a:focus, 
+.dropdown-menu > .active > a:hover {
+    color: #FFF;
+    background-color: rgb(235, 115, 67);
+}
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: rgb(235, 115, 67);
+}
+ ==========================================================================
+   CAROUSEL
+   ========================================================================== 
+.carousel .row {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+/* ==========================================================================
+   Orange Stripe
+   ========================================================================== */
+.orange-stripe {
+	background: rgb(232, 110, 57);
+	height: 55px;
+    font: italic 28px / 55px 'Istok Web';
+    color: #f2f4f6;
+    padding-left: 30px;
+}
+/* ==========================================================================
+   SECTION main-content
+   ========================================================================== */
+.wrapper {
+	background-color: rgba(255,255,255,0.8);
+	-webkit-box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
+	-moz-box-shadow:    3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
+	box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24); 
+	padding: 0 33px;
+	padding-bottom: 37px;
+}
+.main-content {
+    color: #010101;
+/*    padding-bottom: 30px;*/
+}
+.main-content h3 {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: normal;
+}
+.main-content p {
+    font: 400 15px / 21px 'Istok Web';
+    color: #494949;
+}
+.main-content-img  {
+	margin-top: 34px;
+    margin-bottom: 39px;
+    box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.16);
+}
+.main-content h2 {
+    font: 400 25px / 29px 'Istok Web';
+    color: #484949;
+    margin-bottom: 20px;
+    margin-top: 33px;
+}
+.table > tbody > tr > td, 
+.table > tbody > tr > th, 
+.table > tfoot > tr > td,
+.table > tfoot > tr > th, 
+.table > thead > tr > td, 
+.table > thead > tr > th {
+    padding: 0;
+    line-height: 1.42857;
+    vertical-align: top;
+    border-top: 1px solid transparent;
+    color: #494949;
+    font: 400 15px / 21px 'Istok Web';
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+	background-color: #fff;
+    margin-top: 1px;
+    padding: 0 32px;
+    line-height: 41px;
+    font: 400 13px / 41px 'Istok Web';
+    color: rgba(0, 0, 0, 0.68);
+    text-align: center;
+}
+footer a{
+    color: rgba(0, 0, 0, 0.68);
+}
+footer span {
+    padding: 0 15px        
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(max-width:767px){
+    body {
+        /*background: blue;*/
+    }
+    .header-logo img {
+		margin-left: 0;
+    }
+    .navbar-nav {
+	    margin: 0;
+	}
+	.nav {
+	    padding-left: 0;
+	    padding-bottom: 8px;
+	}
+	.navbar-default .navbar-collapse, 
+	.navbar-default .navbar-form {
+	    border-color: #fff;
+	}
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:focus, 
+	.navbar-default .navbar-nav > .active > a:hover,
+	.navbar-default .navbar-nav > li > a:hover  {
+	    background-image: linear-gradient(to bottom, #e95317 0px, #e95317 100%);
+	    background-repeat: repeat-x;
+	    border-bottom: none;
+	    color: #fff;
+	}
+	.navbar-default .navbar-nav > li > a {
+		background-image: linear-gradient(to bottom, #dcdcdc 0px, #dcdcdc 100%);
+	    background-repeat: repeat-x;
+	    color: #656464;
+	    margin-bottom: 2px;
+	}
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .open > a {
+		background-color: #e95317;
+		-webkit-box-shadow:rgba(0, 0, 0, 0.0742188) 0 3px 9px inset;
+		background-image:-webkit-gradient(linear, 0 0%, 0 100%, from(#e95317), to(#e95317));
+		background-repeat:repeat no-repeat;
+		box-shadow:rgba(0, 0, 0, 0.0742188) 0 3px 9px inset;
+	}
+	.navbar-default .navbar-nav > li > a {
+		background-color: #dcdcdc;
+	    color: #656464;
+	}
+	.navbar-default .navbar-nav > li > a:hover {
+		background-color: #e95317;
+	    color: #ffffff;
+	}
+    .navbar-default .navbar-nav > li > a:focus, 
+    .navbar-default .navbar-nav > li > a:hover {
+        color: #ffffff;
+        background-color: transparent;
+/*        border-bottom: 3px solid transparent;*/
+        border-bottom: none;
+    }
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .open > a {
+        color: #ffffff;
+        background: #e95317;
+    }
+    .navbar-default .navbar-nav > .open > a, 
+    .navbar-default .navbar-nav > .open > a:focus, 
+    .navbar-default .navbar-nav > .open > a:hover {
+        color: #fff;
+        background-color: #e95317;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #494949;
+        background: #c6c6c6;
+        line-height: 35px;
+        margin-bottom: 2px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, 
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #494949;
+        background-color: #D3D3D3;
+    }
+    .navbar-toggle {
+        float: left;
+        margin-left: 15px;
+    }
+    .orange-stripe {
+        font-size: 3.5vw;
+    }
+    .main-content h2 {
+        font-size: 6vw;
+    }
+	footer {
+        padding: 15px 0;
+        font: 400 13px/21px "Istok Web";
+    }
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(min-width:768px){
+    body {
+        /*background: red;*/
+    }
+	.navbar-default a {
+		font-size: 14px;
+	}
+	.nav > li > a {
+		padding-left:15px;
+		padding-right:15px;
+	}
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+	  -webkit-box-shadow:none;
+	  background: none; 
+	  box-shadow: none
+	}
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+@media(min-width:992px){
+    body {
+    	/*background: green;*/
+    }
+    .container {
+	 	width: 965px;
+	}
+	/*.navbar-default a {
+		font-size: 18px;
+	}*/
+}
+/* ==========================================================================
+   MEDIA QUERYS
+   ========================================================================== */
+/*@media(min-width:1200px){
+	body {
+        background: #ffffff;
+        min-height: 100%;
+    }
+    .container {
+	 	width: 965px;
+	}
+}*/
