@@ -1,17 +1,50 @@
 
 
-jQuery(function($){
-				
-	$.supersized({
+// Open the Navbar Menu with hover
+// $('.dropdown-menu').on({
+//    mouseenter: function() {
+//       console.log('enter');
+//       if ( !$('.dropdown').hasClass('active') ) {
+//         $('.dropdown').addClass('active');
+//       }
+//    },
+//    mouseleave: function() {
+//       var $self = $(this);
+//          console.log('bye!');
+//          if ( $('.dropdown').hasClass('open') ) {
+//           $('.dropdown').addClass('active');
+//         }
+//          else if ( $('.dropdown').hasClass('active') ) {
+//           $('.dropdown').removeClass('active');
+//         }
+//         else {
+//           $('.dropdown').removeClass('active');
+//         }
+//    }
+// })
 
-		// Functionality
-		slideshow   :   0,		//Slideshow on/off
-												   
-		// Components
-		slides 		:  	[			// Slideshow Images
-				{image : 'http://localhost/clients/tako/ansgaritor/img/background1.jpg', title : 'Image Credit: Maria Kazvan'}
-				// {image : 'http://bootstrap4me.com/sanbox/ansgaritor/img/background1.jpg', title : 'Image Credit: Maria Kazvan'}
-				
-		]
-	});
-});
+// $( ".dropdown" ).click(function() {
+//   if ( !$('.dropdown').hasClass('open') ) {
+//     $('.dropdown').addClass('active');
+//   }
+//   else {
+//     $('.dropdown').removeClass('active');
+//   }
+// });
+
+$(document).ready(function() {
+   function toggleNavbarMethod() {
+       if ($(window).width() > 768) {
+           $('.navbar .dropdown').on('mouseover', function(){
+               $('.dropdown-toggle', this).trigger('click');
+           }).on('mouseout', function(){
+               $('.dropdown-toggle', this).trigger('click').blur();
+           });
+       }
+       else {
+           $('.navbar .dropdown').off('mouseover').off('mouseout');
+       }
+   }
+   toggleNavbarMethod();
+   $(window).resize(toggleNavbarMethod);
+}); 

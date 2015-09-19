@@ -378,10 +378,7 @@ footer .container {
 		margin-left: 15px;
 		margin-right: 0;
 	}
-	/*.navbar-nav {
-	  margin: 7.5px -35px -7.5px -15px;
-	}
-*/	 .navbar-brand > img {
+	.navbar-brand > img {
 		 max-width: 200px;
 	}
 	 .header-logo {
