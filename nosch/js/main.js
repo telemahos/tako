@@ -35,11 +35,13 @@
 $(document).ready(function() {
    function toggleNavbarMethod() {
        if ($(window).width() > 768) {
+         setTimeout(function(){
            $('.navbar .dropdown').on('mouseover', function(){
                $('.dropdown-toggle', this).trigger('click');
            }).on('mouseout', function(){
                $('.dropdown-toggle', this).trigger('click').blur();
            });
+         }, 1800);
        }
        else {
            $('.navbar .dropdown').off('mouseover').off('mouseout');

@@ -94,7 +94,7 @@ header .list-inline a {
 }
 .navbar.navbar-default ul > li {
     border-right: solid 1px #d8d8d8;
-    padding: 10px 15px;
+    padding: 10px 15px 0px;
 }
 .navbar.navbar-default ul li:last-child {
     border-right: none;
@@ -105,6 +105,7 @@ header .list-inline a {
     padding: 0;
     margin: 0;
     border-bottom: solid 8px transparent;
+    margin-bottom: 9px;
 }
 .navbar.navbar-default ul li a:hover,
 .navbar.navbar-default li.active a  {
@@ -122,15 +123,25 @@ header .list-inline a {
     margin: 0;
     background: #d4cdcd;
 }
+.navbar-nav > li > .dropdown-menu {
+    padding-top: 0px;
+}
+ul.nav > li > ul.dropdown-menu > li {
+    padding: 4px;
+    width: 193px;
+}
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 10px;
+}
 .navbar.navbar-default ul li.dropdown {
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 ul.nav > li > ul.dropdown-menu > li {
     /*min-width: 193px;*/
 }
 ul.nav > li > ul.dropdown-menu > li > a {
     text-transform: lowercase;
-    
+    margin: 6px 20px 0px;
 }
 ul.nav > li > ul.dropdown-menu > li:hover,
 ul.nav > li > ul.dropdown-menu > li.active {
@@ -168,26 +179,32 @@ ul.nav > li > ul.dropdown-menu > li.active > a {
     margin-right: -20px;
     margin-left: -20px;
 }
-/* ==========================================================================
-   Orange Stripe
-   ========================================================================== */
-.orange-stripe {
-	background: rgb(232, 110, 57);
-	height: 55px;
-    font: italic 28px / 55px 'Istok Web';
-    color: #f2f4f6;
-    padding-left: 30px;
+.carousel {
+    margin-bottom: 10px;
+}
+.carousel-blog-image {
+    position: relative;
+    display: inline-block;
+}
+.carousel-overlay {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
 }
 /* ==========================================================================
    SECTION main-content
    ========================================================================== */
 .wrapper {
-	background-color: rgba(255,255,255,0.8);
-	-webkit-box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24);
+	background-color: rgba(255,255,255,1);
+	/*-webkit-box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24);
 	-moz-box-shadow:    3px 5px 8px 0px rgba(26, 24, 28, 0.24);
-	box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24);
-	padding: 0 33px;
+	box-shadow: 3px 5px 8px 0px rgba(26, 24, 28, 0.24);*/
+	padding: 0;
 	padding-bottom: 37px;
+    /*margin: 0 -3px;*/
 }
 .main-content {
     color: #010101;
@@ -199,32 +216,43 @@ ul.nav > li > ul.dropdown-menu > li.active > a {
 	font-weight: normal;
 }
 .main-content p {
-    font: 400 15px / 21px 'Istok Web';
-    color: #494949;
+    font-family: OpenSans;
+    color: #2f2e2e;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;/* Approximation due to font substitution */
+    text-align: left;
 }
 .main-content-img  {
 	margin-top: 34px;
     margin-bottom: 39px;
     box-shadow: 2px 4px 5px 0.00px rgba(0, 0, 0, 0.16);
 }
-.main-content h2 {
-    font: 400 25px / 29px 'Istok Web';
-    color: #484949;
-    margin-bottom: 20px;
-    margin-top: 33px;
+.under-line {
+    padding-bottom: 15px;
+    /*margin-right: -37px;*/
+    border-bottom: 1px dotted #163284;
+    /*margin: 10;*/
 }
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
-    padding: 0;
-    line-height: 1.42857;
-    vertical-align: top;
-    border-top: 1px solid transparent;
-    color: #494949;
-    font: 400 15px / 21px 'Istok Web';
+.main-content h2 {
+    font-family: HelveticaLTStd;
+    color:
+    #1c3583;
+    font-size: 32px;/* Approximation due to font substitution */
+    line-height: 30px;/* Approximation due to font substitution */
+    text-align: left;
+}
+.main-content strong {
+    font-family: OpenSans;
+    color: #2f2e2e;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+}
+.divider {
+    min-height: 1px;
+    border-bottom: 1px dotted #163284;
+    margin: 25px 0;
 }
 
 /* ==========================================================================
@@ -232,18 +260,41 @@ ul.nav > li > ul.dropdown-menu > li.active > a {
    ========================================================================== */
 footer {
 	background-color: #fff;
-    margin-top: 1px;
-    padding: 0 32px;
-    line-height: 41px;
-    font: 400 13px / 41px 'Istok Web';
-    color: rgba(0, 0, 0, 0.68);
-    text-align: center;
+    font-family: OpenSans;
+    color: #2f2e2e;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;/* Approximation due to font substitution */
+    text-align: left;
+    margin-top: -37px;
+    margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #1c3583;
 }
 footer a{
-    color: rgba(0, 0, 0, 0.68);
+    font-family: OpenSans;
+    color: #2f2e2e;
+    font-size: 16px;/* Approximation due to font substitution */
+    font-weight: 400;
+    line-height: 24px;/* Approximation due to font substitution */
+    text-decoration: underline;
+    text-align: left;
 }
 footer span {
-    padding: 0 15px
+    /*padding: 0 15px*/
+}
+.footer-logo {
+    margin-left: -10px;
+    margin-bottom: 9px;
+}
+.push-down {
+    margin-bottom: 60px;
+}
+.push-more-down {
+    margin-bottom: 105px;
+}
+footer .list-inline {
+    text-align: right;
 }
 /* ==========================================================================
    MEDIA QUERYS
@@ -260,11 +311,6 @@ footer span {
         margin-left: 30px;
         margin-bottom: 0px;
     }
-
-    /*For Hover Effect*/
-    /*.dropdown:hover .dropdown-menu {
-        display: none;
-    }*/
     /*Clear Float Left or Right from NavBar */
     .navbar-collapse {
         clear: both;
@@ -385,6 +431,9 @@ footer span {
         padding: 4px 30px;
         margin: 1px;
     }
+    ul.nav > li > ul.dropdown-menu > li {
+        width: 100%;
+    }
     .navbar-nav .open .dropdown-menu .dropdown-header,
     .navbar-nav .open .dropdown-menu > li > a {
         padding-bottom: 1px;
@@ -404,6 +453,15 @@ footer span {
     }
     header .list-inline {
         margin-left: 20px;
+    }
+    footer .list-inline {
+        text-align: left;
+    }
+    .push-down {
+        margin-bottom: 20px;
+    }
+    .push-more-down {
+        margin-bottom: 25px;
     }
 }
 /* ==========================================================================
@@ -425,6 +483,12 @@ footer span {
 	  background: none;
 	  box-shadow: none
 	}
+    footer {
+        font-size: 15px;
+    }
+    footer a {
+        font-size: 15px;
+    }
 }
 /* ==========================================================================
    MEDIA QUERYS
@@ -439,6 +503,9 @@ footer span {
 	.navbar-default a {
 		font-size: 14px;
 	}
+    .header-logo img {
+        margin: 0px 0px 0px -20px;
+    }
 }
 /* ==========================================================================
    MEDIA QUERYS
@@ -453,5 +520,8 @@ footer span {
 	}
     .navbar-default a {
         font-size: 15px;
+    }
+    .header-logo img {
+        margin: 0px 0px 0px -30px;
     }
 }
