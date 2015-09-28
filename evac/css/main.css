@@ -49,6 +49,7 @@ h2 {
 	========================================================================== */
 header {
 	background: #ffffff;
+	margin-right: -30px;
 }
 .header {
 	display:block;
@@ -89,7 +90,7 @@ header {
 .header-contact {
 	position: relative;
 	height: 39px;
-	margin-left: -20px;
+	margin-left: -15px;
 	border-width: 1px;
 	border-color:	#dddddd;
 	border-style: solid;
@@ -122,6 +123,9 @@ header {
 .header-contact ul {
 	background: #fff;
 	margin-top: 4px;
+}
+.header-contact ul li:first-child {
+	border-top: 1px solid #e1e1e1;
 }
 .header-contact ul li {
 	background: #fff;
