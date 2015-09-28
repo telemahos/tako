@@ -1,4 +1,16 @@
-
+// Toggle Header Contact Box
+$(function(){
+    $('#select').mouseenter(function(){
+        $('#contact-option').show();
+        $('.header-contact').addClass('header-contact-shadow');
+        $('.header-contact ul').addClass('header-contact-shadow');
+    });
+    $('.header-contact').mouseleave(function(){
+        $('.header-contact').removeClass('header-contact-shadow');
+        $('.header-contact ul').removeClass('header-contact-shadow');
+        $('#contact-option').hide();
+    });
+});
 
 // Open the Navbar Menu with hover
 $('.dropdown-menu').on({
