@@ -647,6 +647,7 @@ footer {
 	.header-zodiac {
 		margin-top: 0px;
 		margin-right: 0px;
+		margin-top: 4px;
 	}
 	.header-zodiac img {
 		width: 100%;
@@ -659,7 +660,7 @@ footer {
 		background: #ffffff;
 	}
 	.carousel {
-		margin-right: 0px;
+		margin-right: -15px;
 	}
 	.carousel h1 {
 		font-size: 34px;
@@ -687,6 +688,9 @@ footer {
 		left: 14px;
 	}
 	/*Our Products*/
+	.products-pane {
+		margin: 0px -15px;
+	}
 	.products-pane img {
 		width: 100%;
 		/*height: 240px;*/
@@ -712,6 +716,9 @@ footer {
 		line-height: 22.5px;
  	}
 	 /*Discover*/
+	 .discover-pane {
+	 	margin: 0px -15px;
+	 }
 	 .discover-pane img {
 	 	width: 100%;
 	 }
@@ -759,11 +766,13 @@ footer {
 	}
 	.overlay-image-service {
 		width: 99%;
+
 	}
 	.light-gray-box {
 		min-width: 100%;
 		margin-left: 0;
 		margin-right: 0;
+		min-height: 340px;
 	}
 	.light-gray-box-content p {
 		font-size: 16px;
@@ -783,9 +792,17 @@ footer {
 		/*margin-right: 200px;*/
 		margin-bottom: 6px;
 	}
+	.footer-middle .list-inline {
+		padding-top: 26px;
+		margin-left: -5px;
+	}
+	.footer-middle .list-inline > li {
+		display: block;
+	}
 	.social-footer  {
 		margin-top: 25px;
 		float: left;
+		margin-left: 0;
 	}
 	.social-footer span {
 	    margin-left: 0px;

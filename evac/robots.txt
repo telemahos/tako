@@ -1,3 +1,24 @@
 # robotstxt.org/
 
 User-agent: *
+
+
+690
+.products-pane {
+      margin: 0px -15px;
+   }
+
+718
+.discover-pane {
+      margin: 0px -15px;
+    }
+
+770
+.light-gray-box {
+      min-height: 340px;
+   }
+
+   794
+   .social-footer  {
+      margin-left: 0;
+   }

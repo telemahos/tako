@@ -2,9 +2,123 @@
 /* ==========================================================================
    NAVBAR
    ========================================================================== */
+.container-fluid > .navbar-collapse,
+ .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+   .container > .navbar-header {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.navbar {
+   margin-bottom: 10px;
+}
+.navbar.no-border .navbar-nav > li.dropdown-full > .dropdown-menu {
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar.navbar-dark-evac .navbar-nav > li > a {
+   color: #ffffff;
+   font-size: 18px;/* Approximation due to font substitution */
+   font-weight: 700;
+   width: 192px;
+   text-align: center;
+   text-transform: uppercase;
+   border-right: 1px solid #414141;
+}
+.navbar.navbar-dark-evac .navbar-nav > li > a:first-child {
+   border-left: 1px solid #414141;
+}
+.navbar .navbar-nav > li.dropdown-grid > .dropdown-grid-wrapper > .dropdown-menu, .navbar .navbar-nav > li[class*="dropdown"] > .dropdown-menu {
+   border-radius: 0px 0px 0px 0px;
+}
+.navbar .navbar-nav > li.dropdown-full > .dropdown-menu, .navbar .navbar-nav > li.dropdown-wide > .dropdown-menu {
+   padding: 0 15px;
+}
+.navbar .h1, .navbar .h2, .navbar .h3, .navbar h1, .navbar h2, .navbar h3 {
+   padding-top: 0;
+/*   padding-bottom: 0;
+   margin-bottom: 0;*/
+}
+.navbar .h1, .navbar .h2, .navbar .h3, .navbar h1, .navbar h2, .navbar h3 {
+   padding-bottom: 0;
+}
 
 
+.menu-img img {
+   max-width: 56px;
+   max-height: 56px;
+   margin: -1px 21px -1px -1px   ;
+   padding-left: 0;
+}
+.menu-col:first-child {
+   border-right: none;
+}
+.menu-col {
+   padding: 0;
+   border-right: 1px solid #cdcdcd;
+}
+.menu-col h3 {
+   color: #585858;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   text-align: left;
+   border-bottom: 1px solid #cdcdcd;
+}
+.menu-col ul li a {
+   color: #585858;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 26px;
+   text-align: left;
+}
+.navbar .dropdown-menu li > a {
+    line-height: 16px;
+}
+.menu-col ul li,
+.menu-col h3 {
+   border-bottom: 1px solid #cdcdcd;
+}
+.menu-col ul li a:before {
+   content:" - ";
+   display: inline;
+   margin: 0 ;
+}
 
+.menu-col h3 {
+   border-top: 1px solid #cdcdcd;
+}
+.menu-col ul li.last-menu-point {
+   border-bottom: none;
+}
+.menu-left-border {
+   border-left: 1px solid #cdcdcd;
+}
+.navbar-toggle {
+   border: none;
+}
+/*#####################*/
+/*Short Menu*/
+.navbar .dropdown-menu.short-menu {
+   -webkit-box-shadow: 0px 4px 6px 0px rgba(33, 36, 32, 0.45);
+   -moz-box-shadow: 0px 4px 6px 0px rgba(33, 36, 32, 0.45);
+   box-shadow: 0px 4px 6px 0px rgba(33, 36, 32, 0.45);
+}
+ul.dropdown-menu.short-menu li {
+   min-width: 192px;
+   border-bottom: 1px solid #cdcdcd;
+}
+ul.dropdown-menu.short-menu li:last-child {
+   border-bottom: none;
+}
+.navbar .dropdown-menu.short-menu li > a {
+   padding: 8px 15px 7px;
+   color: #303030;
+   font-size: 16px;
+   font-weight: 400;
+   /*line-height: 35px;*/
+   text-align: left;
+ }
 /* ==========================================================================
    MEDIA QUERYS
    ========================================================================== */
@@ -12,6 +126,30 @@
     body {
         /*background: blue;*/
     }
+   .navbar.navbar-dark-evac .navbar-nav > li > a {
+      color: #fefefe;
+      font-size: 20px;
+      font-weight: 400;
+      width: 100%;
+
+      text-align: left;
+
+   }
+/*   .navbar.navbar-dark-evac .navbar-nav > li:hover > a {
+      display: block;
+   }*/
+   .navbar .navbar-nav .dropdown-menu li {
+      list-style: outside none none;
+      border-bottom: 1px solid #cdcdcd;
+      padding: 0px 0;
+   }
+   .navbar .navbar-nav .dropdown-menu > li > a {
+      font-size: 16px;
+      line-height: 25px;
+   }
+   .navbar .navbar-nav .dropdown-menu > li:hover > a {
+      display: block;
+   }
 
 }
 
@@ -21,6 +159,9 @@
 @media(min-width:768px){
    body {
      /*background: red;*/
+   }
+   .navbar.navbar-dark-evac .navbar-nav > li > a {
+      width: 150px;
    }
 
 }
@@ -32,7 +173,9 @@
     body {
       /*background: green;*/
     }
-
+    .navbar.navbar-dark-evac .navbar-nav > li > a {
+      width: 192px;
+   }
 }
 
 /* ==========================================================================
