@@ -739,15 +739,15 @@ h4.media-heading  {
 }
 .section-contact-content .media {
 	background: none;
-	width: 100%;
+	/*width: 100%;*/
 	/*border: none;*/
 	border-bottom: 1px solid #d2d2d2;
 	padding-bottom: 22px;
 	margin-bottom: 25px;
 	width: 60%;
 }
-.section-contact-content .media.media-last  {
-	width: 100%
+.section-contact-content .media.media-full  {
+	width: 100%;
 }
 .section-contact-content .media-object {
 	margin-left: 0;
@@ -1102,6 +1102,25 @@ footer {
 	.download-list-element {
 	    min-height: 140px;
 	 }
+	.section-download-content .container,
+	.section-download-area .container,
+	.section-philosophy-content .container {
+		padding: 0 15px;
+	}
+	.section-uebersicht-content .container{
+		padding: 0 30px;
+	}
+	.section-contact-content .container,
+	.section-page-header {
+		padding: 0 15px;
+	}
+	.page-subtitle {
+		line-height: 28px;
+	}
+	.section-contact-content .media {
+		width: auto;
+	}
+
 
 }
 /* ==========================================================================
