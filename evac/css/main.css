@@ -561,7 +561,7 @@ h4.media-heading  {
 	color: #007cc8;
 	font-size: 44px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 40px;
 	text-align: left;
 	margin-top: 43px;
 	margin-left: -2px;
@@ -624,6 +624,10 @@ h4.media-heading  {
 	padding-bottom: 36px;
 	border-bottom: 1px solid #d2d2d2;
 }
+.download-list-last {
+	margin: 42px 0 36px;
+	padding-bottom: 36px;
+}
 .download-list-element {
 	background: #e6e6e6;
 	min-height: 60px;
@@ -652,6 +656,176 @@ h4.media-heading  {
 }
 .download-list-img img {
 	padding-left: 12px;
+}
+.post-title {
+	margin-top: 22px;
+}
+/* ==========================================================================
+	UEBERSICHT
+	========================================================================== */
+.section-uebersicht-content .container {
+	padding: 15px;
+	margin-bottom: 45px;
+	color: #7e0460;
+}
+.left-col {
+	background: #7e0560;
+	height: 64px;
+	width: 37px;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+}
+.mid-col {
+	min-height: 64px;
+	border-top: 1px solid #cfcfcf;
+	border-bottom: 1px solid #cfcfcf;
+	line-height: 60px;
+	color: #323232;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: left;
+	margin: 1px -48px -1px;
+	padding-left: 40px;
+	padding: 20px;
+}
+.right-col {
+	min-height: 64px;
+	background: #e6e6e6;
+	border-top: 1px solid red;
+	border-bottom: 1px solid #Fff;
+	margin: 0 -15px;
+	text-align: center;
+	padding: 20px;
+	width: 237px;
+}
+.right-col-last {
+	border-bottom: 1px solid #DDD;
+}
+.right-col a {
+	color: #323232;
+	font-size: 19px;
+	font-weight: 400;
+}
+.right-col:hover a {
+	display: block;
+}
+.nav-list-item {
+	height: 64px;
+	/*margin-bottom: -17px;*/
+}
+.table > tbody > tr > td, .table > tbody > tr > th,
+ .table > tfoot > tr > td, .table > tfoot > tr > th,
+  .table > thead > tr > td, .table > thead > tr > th {
+    padding: 8px;
+    line-height: 1.42857;
+    vertical-align: middle;
+    /*border-top: 1px solid #DDD;*/
+}
+.table {
+	margin-top: 30px;
+	margin-bottom: 90px;
+}
+.dark-magenta,
+.dark-magenta a {
+	color: #7e0460;
+}
+/* ==========================================================================
+	CONTACT
+	========================================================================== */
+.section-contact-content .container,
+.section-contact-area .container {
+	padding: 0;
+	margin-bottom: 45px;
+}
+.section-contact-content .media {
+	background: none;
+	width: 100%;
+	/*border: none;*/
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 22px;
+	margin-bottom: 25px;
+	width: 60%;
+}
+.section-contact-content .media.media-last  {
+	width: 100%
+}
+.section-contact-content .media-object {
+	margin-left: 0;
+	margin-right: 17px;
+}
+.section-contact-content .media-body,
+.section-contact-content .media-left,
+.section-contact-content .media-right {
+	/*padding-top: 10px;*/
+	display: table-cell;
+	vertical-align: top;
+}
+.section-contact-content .media-body {
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.section-contact-content .media-object,
+.section-contact-content .media-heading {
+    margin-top: 0;
+}
+.media-body address {
+	color: #2e2e2e;
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: left;
+}
+.section-contact-content .media-no-border {
+	border-bottom: none;
+}
+.section-contact-content .btn  {
+	margin-top: 30px;
+}
+/* ==========================================================================
+	PHILOSOPHY
+	========================================================================== */
+.section-philosophy-content .container {
+	padding: 0;
+	margin-bottom: 45px;
+}
+.section-philosophy-content ul.list-unstyled li {
+	margin: 35px 0 25px 0;
+}
+.section-philosophy-content ul.list-unstyled li a {
+	color: #006dc9;
+	font-size: 18px;/* Approximation due to font substitution */
+	font-weight: 400;
+	line-height: 24px;/* Approximation due to font substitution */
+	text-align: left;
+
+}
+.section-philosophy-content ul.list-unstyled li a:before {
+   content:" » ";
+   display: inline;
+   margin-right: 20px;
+   width: 20px;
+}
+article {
+	border-bottom: 1px solid #d2d2d2;
+	padding-bottom: 13px;
+	margin-bottom: 22px;
+}
+article h5 {
+	color: #0063b5;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+article p {
+	color: #2e2e2e;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+.section-philosophy-content .btn {
+	margin-top: 60px;
 }
 /* ==========================================================================
 	FOOTER
@@ -925,6 +1099,9 @@ footer {
 	.xs-left {
 		float: left;
 	}
+	.download-list-element {
+	    min-height: 140px;
+	 }
 
 }
 /* ==========================================================================
@@ -932,7 +1109,7 @@ footer {
 	========================================================================== */
 @media(min-width:768px){
 	body {
-		/*background: yellow;*/
+		background: yellow;
 	}
 	header {
 		margin-right: 0px;
