@@ -218,15 +218,43 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 /* ==========================================================================
 	CAROUSEL
 	========================================================================== */
+	.carousel,
+	.item,
+	.active {
+	    /*height: 532px;*/
+	}
+
+	.carousel-inner {
+	    height: 532px;
+	}
+
+	/* Background images are set within the HTML using inline CSS, not here */
+
+	.fill {
+	    width: 100%;
+	    height: 532px;
+	    background-position: right;
+	    -webkit-background-size: cover ;
+	    -moz-background-size: cover ;
+	    background-size: cover ;
+	    -o-background-size: cover;
+	}
+
+
 .section-carousel {
-	background: #E7E6E4;
+	/*background: #E7E6E4;*/
+	height: 532px;
 }
 /*For non responsive Carousel images*/
-.carousel-img {
-    max-width: none;
+img.carousel-img,
+.carousel-inner > .item > img {
+    /*max-width: none;*/
+    width: 100%;
+    background-size: cover;
+    height: 532px;
 }
 .carousel-img  {
-	position: inherit;
+	/*position: inherit;*/
 	left:0;
 	right:0;
 	margin-left:auto;
@@ -265,7 +293,18 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 	margin-top: -30px;
 	width: 100%;
 }
+.header-img,
+.header-img .fill {
+	max-height: auto;
+}
 
+.carousel-inner > .item > .header-img.fill {
+	height: auto;
+}
+.header-img, .header-img .fill {
+   height: 326px;
+   background-position: center;
+}
 /* ==========================================================================
 	TEASER BOX
 	========================================================================== */
@@ -329,7 +368,7 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 	padding-right: 9px;
     overflow: hidden;
     position: initial;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
 /* ==========================================================================
@@ -412,6 +451,7 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 .front-sideBox-two {
 	margin-left: -15px;
 }
+
 /* =========================================================================
 	MAIN CONTENT
 	========================================================================== */
@@ -436,7 +476,8 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 	min-height: 100%;
 }
 .sidebar .teaser-box-content h4 {
-	margin-top: 19px;
+	/*margin-top: 19px;*/
+	margin-top: 9px;
 	margin-bottom: 17px;
 }
 
@@ -516,6 +557,12 @@ ul.list-sidebox li.active > a {
 .media-left, .media > .pull-left {
     padding-right: 28px;
 }
+.rundgang {
+	-webkit-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+	-moz-box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+	box-shadow: 2px 3px 4px 0px rgba(26, 24, 28, 0.27);
+}
+
 
 /* =========================================================================
 	FORM CONTROL
@@ -585,8 +632,8 @@ footer .container {
 	margin-top: -4px;
 	text-align: right;
 }
-.footer-mid-col {
-
+.footer-mid-col a:hover {
+	color: #fff;
 }
 /* ==========================================================================
 	MEDIA QUERYS
@@ -606,13 +653,23 @@ footer .container {
 	}
 	.section-carousel {
 		padding-top: 40px;
+		height: 332px;
+	}
+	.carousel-inner {
+		height: 332px;
+	}
+	.fill {
+		height: 332px;
+	}
+	.carousel-border-light {
+		height: 16px;
+		margin-top: 25px;
 	}
 	.carousel-border-dark {
 		min-height: 20px;
 	}
-	.carousel-border-light {
-		height: 4px;
-		margin-top: -10px;
+	.section-img-header {
+		margin-bottom: -60px;
 	}
 	.content-img {
 		float: left;
@@ -807,7 +864,9 @@ footer .container {
 		/*min-height: 120px;*/
 	 }
 
-
+	.section-img-header {
+		margin-bottom: 30px;
+	}
 	.header-logo {
 		margin-right: 13px;
 		font-size: 26px;
@@ -833,10 +892,10 @@ footer .container {
 		margin-left: 0;
 	}
 	.teaser-box {
-		top: -140px;
+		top: -250px;
 	}
 	.main {
-		padding-top: 245px;/
+		/*padding-top: 245px;*/
 	}
 	ul.list-sidebox li > a {
    	font-size: 13px;
