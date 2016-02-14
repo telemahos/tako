@@ -111,9 +111,11 @@ span.header-intro-two {
 	margin-top: -20px;
 }
 .top100 {
-	position: absolute;
+	/*position: absolute;
 	left: 22%;
-	top: 162%;
+	top: 162%;*/
+	vertical-align: middle;
+	align-content: center;
 }
 /* ==========================================================================
 	NAVIGATION
@@ -142,7 +144,7 @@ span.header-intro-two {
 	font-family: "Open Sans Condensed", sans-serif;
 	color: #fff;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 600;
 	line-height: 46px;
 	text-align: left;
 	text-transform: uppercase;
@@ -200,9 +202,9 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 	background-color: rgb(0, 125, 64);
 	margin-bottom: 1px;
 	color: #fff;
-	font-family: "Open Sans", sans-serif;
-	font-weight: 600;
-	font-size: 14px;
+	font-family: "Open Sans Condensed", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 }
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
@@ -707,7 +709,7 @@ footer .container {
 		min-height: 200px;
 	}
 	.header-logo-main-img {
-		position: absolute;
+		/*position: absolute;*/
 		left: 13%;
 		top: 0;
 		right: 13%;
@@ -719,19 +721,23 @@ footer .container {
 		margin-top: -10px;
 	}
 	.header-logo h1 {
-		position: absolute;
+		/*position: absolute;*/
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: #007d40;
 		font-size: 17px;
 		font-weight: 700;
 		line-height: 21px;
-		left: 30%;
-		top: 20%;
+		/*left: 30%;
+		top: 20%;*/
+		text-align: center;
+		margin-top: 0;
 	}
 	.top100 {
-		position: absolute;
-		left: 33%;
-		top: 54%;
+		/*position: absolute;*/
+	/*	left: 33%;
+		top: 54%;*/
+		vertical-align: middle;
+		align-content: center;
 	}
 	/*Clear Float Left or Right from NavBar */
 	.navbar-nav {
@@ -778,6 +784,7 @@ footer .container {
 		background-repeat: repeat-x;
 		margin-bottom: 0px;
 		text-transform: none;
+		font-weight: 500;
 	 }
 	 .navbar-default .navbar-nav > .active > a,
 	 .navbar-default .navbar-nav > .open > a {
@@ -894,7 +901,7 @@ footer .container {
 @media(min-width:768px){
 	 body {
 		  /*background: red;*/
-		  background: #000;
+		  background: #2c2c2c;
 	 }
 	 header {
 		/*min-height: 120px;*/
@@ -925,6 +932,7 @@ footer .container {
 		line-height: 21px;
 		left: 18%;
 		top: 43%;
+		margin-top: 20px;
 	}
 	.carousel-border-light {
 		margin-top: -26px;
@@ -936,7 +944,7 @@ footer .container {
 		height: 232px;
 	}
 	.navbar-default .navbar-nav > li > a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.front-sideBox {
 		margin-right: -15px;
@@ -1009,7 +1017,7 @@ footer .container {
 		font-size: 36px;
 	}
 	.navbar-default .navbar-nav > li > a {
-		font-size: 15px;
+		font-size: 16px;
 	}
 	.front-sideBox {
 		margin-right: 0;
