@@ -1,0 +1,19 @@
+// "Roboto Condensed"
+.teasertext  {
+   font-family: "Roboto Condensed";
+   color:  #6a6a6a;
+   color: green;
+   font-size: 48.01px;
+   font-weight: 400;
+   line-height: 11px;
+   text-align: left;
+}
+
+.teasertext a span {
+   font-family: "Roboto Condensed";
+   color:  #b71a1a;
+   font-size: 18.01px;
+   font-weight: 400;
+   line-height: 11px;
+   text-align: left;
+}
