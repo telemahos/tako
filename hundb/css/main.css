@@ -37,7 +37,7 @@ body {
 	margin-right: 0px;
 	margin-bottom: 0px;
 	margin-left: -495px;
-	z-index: 2;
+	z-index: -1;
 	height: 400px;
 }
 
@@ -51,10 +51,10 @@ body {
 }
 #flashfeld {
 	position:absolute;
-	width:989px;
+	width:960px;
 	height:281px;
 	z-index:1;
-	left: 0px;
+	left: 15px;
 	top: 140px;
 }
 .inhalt1 {
