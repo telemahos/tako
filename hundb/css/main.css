@@ -29,47 +29,47 @@ body {
 	top: 0;
 }
 #mittig {
-	position:absolute;
+	// position:absolute;
 	top:0px;
-	left:50%;
-	width:989px;
+	// left:50%;
+	// width:989px;
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: -495px;
+	// margin-left: -495px;
 	z-index: -1;
 	height: 400px;
 }
 
 #logo {
-	position:absolute;
+	position:relative;
 	width:280px;
 	height:42px;
 	z-index:1;
-	left: 13px;
-	top: 77px;
+	left: 0;
+	top: 10px;
 }
 #flashfeld {
-	position:absolute;
-	width:960px;
+	position:relative;
+	// width:960px;
 	height:281px;
 	z-index:1;
-	left: 15px;
-	top: 140px;
+	// left: 15px;
+	top: 31px;
 }
 .inhalt1 {
 	float: left;
-	width: 960px;
-	padding-top: 452px;
+	// width: 960px;
+	padding-top: 63px;
 	padding-right: 15px;
 	padding-bottom: 30px;
-	padding-left: 14px;
+	padding-left: 15px;
 	background-image: url(../img/basis.jpg);
 	background-repeat: no-repeat;
 }
 .inhalt2 {
 	float: left;
-	width: 960px;
+	// width: 960px;
 	padding-top: 140px;
 	padding-right: 15px;
 	padding-bottom: 30px;
@@ -83,17 +83,17 @@ body {
 	width: 310px;
 }*/
 .teaserbild {
-	float: left;
-	width: 310px;
+	// float: left;
+	// width: 310px;
 }
 .teaserinhalt {
-	float: left;
-	width: 310px;
+	// float: left;
+	// width: 310px;
 	padding-top: 16px;
 }
 .teasermehr {
 	float: left;
-	width: 285px;
+	// width: 285px;
 	padding-top: 6px;
 	padding-left: 25px;
 	padding-bottom: 10px;
@@ -102,8 +102,8 @@ body {
 	background-position: 1px 10px;
 }
 .footer {
-	float: left;
-	width: 960px;
+	// float: left;
+	// width: 960px;
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #d2d2d2;
@@ -378,7 +378,7 @@ h2 {
 }
 .grossbild {
 	float: left;
-	width: 960px;
+	// width: 960px;
 	padding-bottom: 38px;
 }
 .gomaps {
