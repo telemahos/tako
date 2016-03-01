@@ -226,7 +226,78 @@
 /* ==========================================================================
    General
    ========================================================================== */
-
+.side-menu ul {
+  margin-bottom: 60px;
+}
+.side-menu ul li {
+  border-bottom: 1px solid #dbdbdb;
+}
+.side-menu ul li a {
+  font-family: Tahoma;
+  color:  #6a6a6a;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.16px;
+  line-height: 30px;
+  text-align: left;
+}
+.side-menu ul li:hover a {
+  display: block;
+}
+.side-menu ul li a:hover,
+.side-menu ul li.active a {
+  color:  #b71a1a;
+}
+.side-menu ul li a:hover:before,
+.side-menu ul li.active a:before {
+  content: "\25CF   ";
+}
+.content h2 {
+  font-family: "Roboto Condensed";
+  color:  rgba(80, 80, 80, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 24px;
+  margin-bottom: 12px;
+}
+.content > p {
+  font-family: Tahoma;
+  color:  #6a6a6a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 27px;
+}
+.media {
+    margin-top: 5px;
+}
+.media-heading {
+    margin-bottom: 0px;
+}
+.media-body {
+  background: #fffefe;
+  border: 1px solid #dadada;
+  padding: 12px 12px 0 12px;
+}
+@media(max-width:767px){
+  .media-body {
+    display: inherit;
+    width: 100%;
+  }
+  .media {
+    margin-top: 15px;
+  }
+}
+/*@media(min-width:768px){
+  .media-body, .media-left, .media-right {
+    display: inherit;
+    width: 100%;
+  }
+}*/
 
 /* ==========================================================================
    General
