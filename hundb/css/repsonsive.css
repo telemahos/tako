@@ -415,6 +415,9 @@ margin-right: -15px;
    .navbar-nav {
       margin-left: -30px;
    }
+   .navbar-nav > li > a {
+      font-size: 12px;
+   }
    #logo {
       /*left: 135px;*/
    }
@@ -463,6 +466,9 @@ margin-right: -15px;
    }
    .navbar-nav {
       margin-left: 204px;
+   }
+   .navbar-nav > li > a {
+      font-size: 14px;
    }
    #logo {
       /*left: 30px;*/
@@ -528,10 +534,10 @@ margin-right: -15px;
    .navbar-brand > img {
        max-width: 200px;
    }
-.navbar-nav {
-  margin: 0px 0px 0px -15px;
-  background: #fff;
-  padding-bottom: 5px;
+   .navbar-nav {
+      margin: 0px 0px 0px -15px;
+      background: #fff;
+      padding-bottom: 5px;
    }
    .nav > li > a {
       padding: 10px 25px;
