@@ -27,6 +27,9 @@
    padding: 10px 10px;
    /*line-height: 47px;*/
 }
+.navbar-default .navbar-nav>li>a {
+  color: #acabab;
+}
 .navbar-default {
    background: rgb(30,30,30);
    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFlMWUxZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxOTE5MTkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -88,6 +91,13 @@
     text-decoration: none;
     background-color: #b83131;
 }
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    color: #fff;
+    background-color: transparent;
+}
 
 
 .contact-btn {
@@ -122,17 +132,21 @@
    Carousel
    ========================================================================== */
 .carousel {
-   //
+
 }
 .slider-shadow {
    position: absolute;
    width: 639px;
    height: 170px;
    bottom: 32px;
-   background: green;
+   background: transparent;
    left: 16%;
    z-index: -1;
    box-shadow: 0px 29px 38.269999999999996px 4.73px rgba(0, 0, 0, 1);
+}
+.carousel-control {
+   top: 45%;
+   opacity: 1;
 }
 .carousel-control.left {
     background-image: none;
@@ -146,9 +160,7 @@
    .carousel-control.right img {
       margin-right: -96px;
    }
-.carousel-control {
-   top: 45%;
-}
+
 .carousel-caption {
    background: rgba(255, 255, 255, 0.2);
    padding: 0;
@@ -226,6 +238,12 @@
 /* ==========================================================================
    General
    ========================================================================== */
+.side-menu {
+  margin-left: 0;
+  padding-right: 15px;
+  padding-left: 0;
+  margin-right: -15px;
+}
 .side-menu ul {
   margin-bottom: 60px;
 }
@@ -251,6 +269,11 @@
 .side-menu ul li a:hover:before,
 .side-menu ul li.active a:before {
   content: "\25CF   ";
+}
+.content {
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 15px;
 }
 .content h2 {
   font-family: "Roboto Condensed";
@@ -373,6 +396,9 @@ margin-right: -15px;
    .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
       background-image: none;
     }
+  .content {
+    margin-left: 0px;
+  }
 
 }
 
@@ -503,9 +529,9 @@ margin-right: -15px;
        max-width: 200px;
    }
 .navbar-nav {
-      margin: -1px -15px -1px -15px;
-      background: #fff;
-      padding-bottom: 0;
+  margin: 0px 0px 0px -15px;
+  background: #fff;
+  padding-bottom: 5px;
    }
    .nav > li > a {
       padding: 10px 25px;
@@ -532,6 +558,10 @@ margin-right: -15px;
     .navbar-default .navbar-collapse,
     .navbar-default .navbar-form {
         border-color: #fff;
+    }
+    .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+      background-image: none;
+      background-image: linear-gradient(to bottom, #d7918f 0px, #d7918f 100%);
     }
     .navbar-default .navbar-nav > .active > a,
     .navbar-default .navbar-nav > .active > a:focus,
