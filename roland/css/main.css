@@ -8,14 +8,24 @@ html{
   height: 100%;
 }
 body {
-	background-image: url(img/hg_inhalt.jpg);
+    font-family: arial;
+    font-size: 14px;
+	background-image: url(../img/hg_inhalt.jpg);
 	background-repeat: repeat-x;
-	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
 }
 .container {
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 35px;
     width: 920px;
+    background-color: #fff;
+    background-image: url(../img//basis.jpg);
+    background-repeat: repeat-x;
+    -webkit-box-shadow: 0px 0px 3.85px 3.15px rgba(39, 39, 38, 0.32);
+    -moz-box-shadow: 0px 0px 3.85px 3.15px rgba(39, 39, 38, 0.32);
+    box-shadow: 0px 0px 3.85px 3.15px rgba(39, 39, 38, 0.32); 
 }
 .row {
   /*margin-right: 0;*/
@@ -24,14 +34,16 @@ body {
 	HEADER
 	========================================================================== */
 header {
-	margin-bottom: -60px;
-	position: absolute;
+/*	margin-bottom: -60px;*/
+/*	position: absolute;*/
+/*
 	left:0;
 	right:0;
 	margin-left:auto;
 	margin-right:auto;
 	z-index: 1;
 	background: rgba(255,255,255,0.89);
+*/
 	/*background: #fff;*/
 	/*min-height: 157px;*/
 }
@@ -40,7 +52,6 @@ a.header-logo  {
 	text-decoration: none;
 }
 .header-logo {
-	font-family: "Roboto Condensed";
 	color: #007160;
 	font-size: 36px;
 	font-weight: 400;
@@ -62,6 +73,7 @@ a.header-logo  {
 */
     width: 247px;
     height: 110px;
+    margin-top: 12px;
 }
 /*
 .twentyfour {
@@ -108,7 +120,13 @@ span.header-intro-two {
 .nav>li>a {
     padding: 10px;
 }
-
+#navbar {
+    margin-top: 103px;
+    margin-left: 342px;
+}
+.navbar-brand {
+    padding: 15px 0;
+}
 .navbar {
 	margin-bottom: 0;
 	border: none;
@@ -125,43 +143,45 @@ span.header-intro-two {
   padding-bottom: 1px;
 }
 .navbar-default .navbar-nav > li > a {
-	font-family: "Roboto Condensed";
+/*	font-family: "Roboto Condensed";*/
 	color: #000000;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 18px;
 	text-align: left;
 	text-transform: uppercase;
+    border-bottom: 2px solid #fff;
 }
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover  {
-	 background-color: #007161;
-	 color: #FFF;
+/*	 background-color: #007161;*/
+	 color: #006d49;
+    border-bottom: 2px solid #0d7452;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a {
-	color: #fff;
-	background: #007161;
-	background-image: linear-gradient(to bottom, #007161 0px, #007161 100%);
+	color: #006d49;
+	background: #fff;
+	background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
 	background-repeat: repeat-x;
 	box-shadow:none;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navb
 
 
+
+/*
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:focus,
 .navbar-default .navbar-nav > .open > a:hover {
 	 color: #fff;
 }
+*/
 .navbar-nav > li > a {
 	padding-top: 7px;
-	padding-bottom: 21px;
+	padding-bottom: 5px;
 	margin-right: 0;
-	margin-bottom: -1px;
-	margin-top: 1px;
+	margin-bottom: 20px;
+	margin-top: 0;
 }
 .navbar-nav > li:last-child > a {
 	 margin-right: -25px;
@@ -169,7 +189,7 @@ span.header-intro-two {
 .navbar-default .navbar-nav > li > a:focus,
 .navbar-default .navbar-nav > li > a:hover
 a:focus, .navbar-default .navbar-nav > .active > a:hover{
-	 color: #FFF;
+/*	 color: #FFF;*/
 	 background-color: #007161;
 }
 .navbar-collapse {
@@ -223,7 +243,7 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 	 background-color: #007161;
 }
 .navbar-nav>li>.dropdown-menu {
-	margin-top: 1px;
+	margin-top: 0px;
 	padding-top: 1px;
 }
 
@@ -254,8 +274,10 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 
 
 .section-carousel {
-	/*background: #E7E6E4;*/
+	background: #fafafa;
 	height: 532px;
+    padding: 20px;
+    border: 1px solid #eaeaea;
 }
 /*For non responsive Carousel images*/
 img.carousel-img,
@@ -338,7 +360,6 @@ img.carousel-img,
 	margin-bottom: 46px;
 }
 .teaser-box-content h4 {
-	font-family: "Roboto Condensed";
 	color: #a21a23;
 	font-size: 26px;
 	font-weight: 400;
@@ -348,7 +369,7 @@ img.carousel-img,
 }
 
 .teaser-box-content p {
-	font-family: Roboto;
+	
 	color: #000000;
 	font-size: 15px;
 	font-weight: 400;
@@ -357,7 +378,6 @@ img.carousel-img,
 }
 .teaser-box-content .more {
 	position: absolute;
-	font-family: "Roboto Condensed";
 	color: #ffffff;
 	font-size: 14px;/* Approximation due to font substitution */
 	font-weight: 400;
@@ -408,7 +428,6 @@ img.carousel-img,
 	vertical-align: top;
 }
 .main h1 {
-	font-family: Roboto;
 	color:#007161;
 	font-size: 28px;
 	font-weight: 400;
@@ -442,14 +461,12 @@ img.carousel-img,
 	margin-bottom: 10px;
 }
 .front-sideBox h1 {
-	font-family: Roboto;
 	color: #ffffff;
 	font-size: 28px;/* Approximation due to font substitution */
 	font-weight: 300;
 	text-align: left;
 }
 .front-sideBox p {
-	font-family: Roboto;
 	color: #ffffff;
 	font-size: 15px;
 	font-weight: 300;
@@ -457,7 +474,6 @@ img.carousel-img,
 	text-align: left;
 }
 .front-sideBox a {
-	font-family: Roboto;
 	color: #ffffff;
 	font-size: 15px;
 	font-weight: 300;
@@ -476,7 +492,6 @@ img.carousel-img,
 	margin-top: 28px;
 }
 .main-content h1 {
-	font-family: Roboto;
 	color: #007161;
 	font-size: 28px;
 	font-weight: 400;
@@ -508,7 +523,6 @@ ul.list-sidebox li > a {
 	/*height: 38px;*/
 	background: #007161;
 	line-height: 38px;
-	font-family: Roboto;
 	color: #ffffff;
 	font-size: 16px;
 	font-weight: 400;
@@ -526,7 +540,6 @@ ul.list-sidebox li.active > a {
 	padding-bottom: 55px;
 }
 .gallerie h1 {
-	font-family: Roboto;
 	color:#007161;
 	font-size: 28px;
 	font-weight: 400;
@@ -542,7 +555,6 @@ ul.list-sidebox li.active > a {
 	border-bottom: 1px solid #d2d2d2;
 }
 .media-heading {
-	font-family: Roboto;
 	color: #000000;
 	font-size: 16px;
 	font-weight: 500;
@@ -550,7 +562,6 @@ ul.list-sidebox li.active > a {
 	text-align: left;
 }
 .media-body {
-	font-family: Roboto;
 	color: #000000;
 	font-size: 15px;
 	font-weight: 300;
@@ -558,7 +569,6 @@ ul.list-sidebox li.active > a {
 	text-align: left;
 }
 .media-body a {
-	font-family: Roboto;
 	color: #000000;
 	font-size: 15px;
 	font-weight: 300;
@@ -625,7 +635,6 @@ footer {
 }
 footer p {
 	margin-bottom: 0;
-	font-family: Roboto;
 	color: #ffffff;
 	font-size: 15px;/* Approximation due to font substitution */
 	font-weight: 300;
@@ -762,7 +771,6 @@ footer .container {
 	 }
 	.navbar-default .navbar-nav > li > a {
 		/*background-color: #CDE2F5;*/
-		font-family: Roboto;
 		color: #000000;
 		font-size: 17px;
 		line-height: 36px;
@@ -944,7 +952,7 @@ footer .container {
 		font-size: 36px;
 	}
 	.navbar-default .navbar-nav > li > a {
-		font-size: 16px;
+/*		font-size: 16px;*/
 	}
 	.teaser-box-content h4 {
 		font-size: 26px;
