@@ -4,6 +4,7 @@
 	GENERAL
 	========================================================================== */
 
+
 html{
   height: 100%;
 }
@@ -112,13 +113,18 @@ a.header-logo  {
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a {
-	color: #006d49;
-	background: #fff;
-	background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
-	background-repeat: repeat-x;
+	color: #fff;
+	background: #0d7452;
+	/*background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);*/
+	/*background-repeat: repeat-x;*/
 	box-shadow:none;
 }
-
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: transparent;
+}
 .navbar-nav > li > a {
 	padding-top: 7px;
 	padding-bottom: 5px;
@@ -167,6 +173,13 @@ a:focus, .navbar-default .navbar-nav > .active > a:hover{
 .dropdown-menu>li>a:focus,
 .dropdown-menu>li>a:hover {
   color: #fff;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+   background-color: #007d40;
+   background-image: -webkit-linear-gradient(top,#007d40 0,#007d40 100%);
+   background-image: -o-linear-gradient(top,#007d40 0,#007d40 100%);
+   background-image: -webkit-gradient(linear,left top,left bottom,from(#007d40),to(#007d40));
+   background-image: linear-gradient(to bottom, #007d40 0px, #007d40 100%);
 }
 /*###############*/
 
@@ -796,20 +809,20 @@ footer .container {
 	 .navbar-default .navbar-nav > .active > a:focus,
 	 .navbar-default .navbar-nav > .active > a:hover,
 	 .navbar-default .navbar-nav > li > a:hover  {
-		  background-image: linear-gradient(to bottom, #007161 0px, #007161 100%);
+		  background-image: linear-gradient(to bottom, #0d7452 0px, #0d7452 100%);
 		  background-repeat: repeat-x;
 		  border-bottom: none;
 		  color: #fff;
          margin-bottom: 2px;
 	 }
 	 .navbar-default .navbar-nav > li > a {
-        background-image: linear-gradient(to bottom, #eaeaea 0px, #eaeaea 100%);
+        background-image: linear-gradient(to bottom, #eeeeee 0px, #eeeeee 100%);
         background-repeat: repeat-x;
         color: #656464;
         margin-bottom: 2px;
         border-bottom: 0px;
         color: #000000;
-        font-size: 17px;
+        font-size: 15px;
         line-height: 36px;
         text-transform: none;
 	 }
@@ -817,7 +830,11 @@ footer .container {
    .navbar-default .navbar-nav > li > a:hover {
       border-bottom: none;
    }
-
+   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover {
+    color: #fff;
+    background-color: #016040;
+    background-image: linear-gradient(to bottom, #016040 0px, #016040 100%);
+}
 
 	 .navbar-default .navbar-nav > .active > a,
 	 .navbar-default .navbar-nav > .open > a {
@@ -827,8 +844,9 @@ footer .container {
 		background-repeat:repeat no-repeat;
 		box-shadow:rgba(0, 0, 0, 0.0742188) 0 3px 9px inset;
 	 }
-	 .navbar-default .navbar-nav > li > a:hover {
-		background-color: #005BAB;
+	 .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+		background-color: #0d7452;
 		  color: #ffffff;
 	 }
 	 /* Change the last Li child right margin */
@@ -849,9 +867,13 @@ footer .container {
 		background-image: linear-gradient(to bottom, #eaeaea 0px, #eaeaea 100%);
 		line-height: 36px;
 	}
+   .navbar-nav > li > .dropdown-menu {
+      margin-top: 0px;
+      padding-top: 0px;
+   }
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
 		color: #fff;
-		background-image: linear-gradient(to bottom, #007161 0px, #007161 100%);
+		background-image: linear-gradient(to bottom, #0d7452 0px, #0d7452 100%);
 	}
 	.container-fluid > .navbar-collapse,
 	.container-fluid > .navbar-header,
@@ -869,6 +891,9 @@ footer .container {
 	 .navbar-nav .open .dropdown-menu {
     	/*background-color: #fff;*/
     }
+   .dropdown-menu {
+      font-size: 15px;
+   }
    .header-intro {
    	float: right;
    	margin-top: 10px;
