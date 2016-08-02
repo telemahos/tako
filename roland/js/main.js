@@ -19,6 +19,13 @@ $(document).ready(function() {
    }
    toggleNavbarMethod();
    $(window).resize(toggleNavbarMethod);
+   
+   // Carousel Green Box
+   $('.carousel-green-box').css({
+//      'width': '290px',
+//      'float': 'right'
+      });
+   
 });
 
 
